@@ -1,0 +1,131 @@
+1615719262757	geckodriver	INFO	Listening on 127.0.0.1:58211
+1615719262777	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIGeic0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1615719280614	Marionette	INFO	Listening on port 36605
+1615719280960	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1615719294171	Marionette	INFO	Stopped listening on port 36605
+1615719493323	geckodriver	INFO	Listening on 127.0.0.1:52821
+1615719493336	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRhHe8D"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615719516256	Marionette	INFO	Listening on port 39857
+1615719516527	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: IPC Channel is already torn down unexpectedly
+
+Exiting due to channel error.
+Exiting due to channel error.
+1615855957321	geckodriver	INFO	Listening on 127.0.0.1:49839
+1615855958256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefYOxk9"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615855981119	Marionette	INFO	Listening on port 43335
+1615855981477	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NotAllowedError: The request is not allowed by the user agent or the platform in the current context.
+JavaScript error: , line 0: NotAllowedError: The request is not allowed by the user agent or the platform in the current context.
+JavaScript error: , line 0: NotAllowedError: The request is not allowed by the user agent or the platform in the current context.
+JavaScript error: , line 0: NotAllowedError: The request is not allowed by the user agent or the platform in the current context.
+1615857432865	geckodriver	INFO	Listening on 127.0.0.1:33357
+1615857432880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled67cwx"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615857464920	Marionette	INFO	Listening on port 33691
+1615857465993	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1615857478792	Marionette	INFO	Stopped listening on port 33691
+
+(firefox:2351): Gtk-CRITICAL **: 09:29:24.921: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(firefox:2351): Gtk-CRITICAL **: 09:29:25.031: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+1615858235106	geckodriver	INFO	Listening on 127.0.0.1:47185
+1615858235123	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWmTujY"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615858267984	Marionette	INFO	Listening on port 36271
+1615858268386	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/actors/AudioPlaybackParent.jsm, line 20: TypeError: browser is null
+JavaScript error: resource://gre/actors/AudioPlaybackParent.jsm, line 24: TypeError: browser is null
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+1615858305591	Marionette	INFO	Stopped listening on port 43335
+1615858305615	Marionette	INFO	Stopped listening on port 36271
+1616032696917	geckodriver	INFO	Listening on 127.0.0.1:39627
+1616032697832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2ZNsQJ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616032718598	Marionette	INFO	Listening on port 46099
+1616032773766	geckodriver	INFO	Listening on 127.0.0.1:51757
+1616032773783	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaIsADu"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616032788522	Marionette	INFO	Listening on port 43023
+1616032789022	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 190: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1616033463756	geckodriver	INFO	Listening on 127.0.0.1:54351
+1616033463777	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2y5G2d"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616033490694	Marionette	INFO	Listening on port 40925
+1616033491243	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616033835932	geckodriver	INFO	Listening on 127.0.0.1:49465
+1616033835959	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecH3ve6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616033862389	Marionette	INFO	Listening on port 35709
+1616033862907	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1616033930157	geckodriver	INFO	Listening on 127.0.0.1:60181
+1616033930178	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJs3chL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616033973371	Marionette	INFO	Listening on port 40723
+1616033974242	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616034080169	geckodriver	INFO	Listening on 127.0.0.1:54405
+1616034080206	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5OTTOh"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 773))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 422))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xFFF7,name=<unknown IPC msg name>) Channel error: cannot send/recv
+
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1616034499968	Marionette	INFO	Stopped listening on port 40723
+1616034503145	Marionette	INFO	Stopped listening on port 35709
+1616034503320	Marionette	INFO	Stopped listening on port 40925
+Gdk-Message: 10:28:40.901: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 10:28:40.901: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 10:28:40.901: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 10:28:40.905: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 10:28:42.528: firefox: Fatal IO error 2 (No such file or directory) on X server :0.
+
