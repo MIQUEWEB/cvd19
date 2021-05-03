@@ -13,8 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import url
-from RICList import views
+#from django.conf.urls import url
+#from RICList import views
 
-urlpatterns = [
-    url(r'^$', views.home_page, name='home_page'), ]
+#urlpatterns = [
+    #url(r'^$', views.homepage, name='homepage'),]
+from django.conf.urls import url, include
+from django.contrib import admin
+from RICList import views 
+
+urlpatterns = [    
+    url(r'^$', views.home_page, name='home_page'),    
+    url(r'^RICList/new$', views.new_list, name='new_list'),    
+    url(r'^RICList/(\d+)/$', views.view_list, name='view_item'),    
+    url(r'^RICList/(\d+)/add_item$', views.add_item, name='add_item'),]
+    
+   	
+
+     # url(r'^$', 'RICSList.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    # url(r'^admin/', include(admin.site.urls)),
