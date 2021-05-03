@@ -23,14 +23,14 @@ class PageTest(LiveServerTestCase):
                    time.sleep(0.5)  
                  
     def setUp(self):
-     self.browser = webdriver.Firefox()
+        self.browser = webdriver.Firefox()
 
     def test_browser_title(self):
-     self.browser.get('http://localhost:8000/')
+        self.browser.get('http://localhost:8000/')
      #self.browser.get(self.live_server_url)
-     self.assertIn('COVID19 Vaccinated Record',self.browser.title)
-     header_text = self.browser.find_element_by_tag_name('h1').text
-     self.assertIn('COVID19 VACCINATED RECORD', header_text)
+        self.assertIn('COVID19 Vaccinated Record',self.browser.title)
+        header_text = self.browser.find_element_by_tag_name('h1').text
+        self.assertIn('COVID19 VACCINATED RECORD', header_text)
      
      
      #aaddress = self.browser.find_element_by_id('address')
