@@ -1,8 +1,10 @@
+
 from django.conf.urls import url, include
 from django.contrib import admin
 from RICList import views 
 
 urlpatterns = [    
+    url('admin/',admin.site.urls),
     url(r'^$', views.HomePage, name='HomePage'),    
     url(r'^RICList/new$', views.new_list, name='new_list'),    
     url(r'^RICList/(\d+)/$', views.view_list, name='view_item'),    

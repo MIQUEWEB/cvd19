@@ -1,44 +1,81 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from RICList.models import Item, COVIDList
-
+from RICList.models import Municipality, Personal_Info
 
 def HomePage(request):
-    items = Item.objects.all()
-    return render(request, 'homepage.html',{'items' : items})
-    
+    municipalitys= Municipality.objects.all()
+    return render(request, 'homepage.html', {'municipalitys': municipalitys})
 
-
-def view_list(request, list_id):
-    list_ = COVIDList.objects.get(id=list_id)
-    return render(request, 'submit.html', {'list': list_})
-
+def view_list(request, municipality_id):
+    municipality_ = Municipality.objects.get(id=municipality_id)
+    return render(request, 'registration.html', {'municipality': municipality_})
 
 def new_list(request):
-    list_ = COVIDList.objects.create()
-    Item.objects.create(zflname=request.POST['flname'],znaddress =request.POST['address'],zpnumber=request.POST['rnumber'],zrmbirthday =request.POST['rmday'],zvaccine =request.POST['vaccine'], list=list_)
-    return redirect(f'/RICList/{list_.id}/')
+    municipal_= Municipality.objects.create()
+    #municipal_= Municipality.objects.create(ukmunicipality=request.POST['flmunicipality'],yybaranggay=request.POST['zzbaranggay'])
+    return redirect(f'/RICList/{municipal_.id}/')
 
-def add_item(request, list_id):
-    list_ = COVIDList.objects.get(id=list_id)
-    Item.objects.create(zflname=request.POST['flname'],znaddress =request.POST['address'],zpnumber=request.POST['rnumber'],zrmbirthday =request.POST['rmday'],zvaccine =request.POST['vaccine'], list=list_)
-    return redirect(f'/RICList/{list_.id}/')
-
-
+def add_item(request, municipality_id):
+    municipality_ = Municipality.objects.get(id=municipality_id)
+    #Personal_Info.objects.create(zflname=request.POST['zvname'],znaddress=request.POST['xxaddress'],zpngender=request.POST['rjgender'],zpnumber=request.POST['contactn'],zvphilhealth=request.POST['philnumber'] ,zrmbirthday=request.POST['kkbirthday'],municipality=municipality_)
+    return redirect(f'/RICList/{municipality_.id}/')
 
 
+def dataManipulation(request):
+    municipality = Municipality (ukmunicipality="Dasma", yybaranggay="Paliparan III")
+    municipality.save()
+    
+    objects = Municipality.objects.all()
+    result ='Result of all entries in municipality model : <br>'
+    for x in objects:
+        res += x.Municipality+'<br>'
+    municipalty = Municipality.objects.get(id='18')
+    res += 'Only one entry <br>'
+    res += hhmunicipality.Baranggay
+    
+    res += '<br> Delete entry <br>'
+    municipality.delete()
+    
+    municipality = Municipality.objects(ukmunicipality = 'dasma' , yybaranggay = 'Paliparan III')
+    municipality.save()
+    res =""
+
+    qs = Municipality.objects.filter(ukmunicipality = 'dasma')
+    res += "Found : %s results <br>" %len(qs)
+
+    qs = Municipality.objects.order_by('ukmunicipality')
+    for x in qs:
+        res += x.ukmunicipality + x.yybaranggay +'<br>'
 
 
-
-#def homepage(request):
-    #if request.method == 'POST':
-        #Item.objects.create(text=request.POST['    peronEntry'])
-        #return redirect('/')
-    #items = Item.objects.all()
-    #return render(request, 'homepage.html', {'newPerson': items})
-
-
-
+#<table id="tablelist" name="tr">
+    #{% for item in items %}
+    #<tr>
+        #<td>{{ item.ukmunicipality }}</td>
+        #<td>{{ item.yybaranggay }}</td>
+     
+        
+       
+        
+        
+    #</tr>
+     #{% endfor %}
+#</table>
+#<table id="tablelist" name='tr'>
+  #{% for item in list.item_set.all %} 
+      # <! -- {{ forloop.counter }}:  -->
+    
+    #<tr>
+        #<td>{{ item.zflname }}</td>
+        #<td>{{ item.znaddress }}</td>
+        #<td>{{ item.zpngender }}</td>
+        #<td>{{ item.zpnumber }}</td>
+        #<td>{{ item.zvphilhealth }}</td>
+        #<td>{{ item.zrmbirthday }}</td>
+        
+    #</tr>
+     #{% endfor %}
+#</table>
 
 
 #From RICCOVIDList.models import Item
