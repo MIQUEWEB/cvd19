@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+</head>
+<header>
+     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+
+<ul class="nav-area">
+<li><a href="homepage.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+   <!-- <img src="https://www.cdc.gov/coronavirus/2019-ncov/downloads/vaccines/toolkits/protects-you-and-fam_social-square.jpg">
+<style>
+img{ 
+ 
+  width: 40%;
+  height: 100%;
+  float: right;
+  margin-right: 1px;
+  margin-left: 20px;
+
+
+}
+</style>
+ <style>
+      body {
+       padding: 20px;
+}-->
+<style> 
+label {
+ font-size: 20px;
+font-weight: 700;
+color:#8B0000;
+
+}
+
+</style>
+
+<br> <br>
+ <br> <br> <br> 
+
+<style >
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:#191970;
+text-align: center;
+}
+   
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+}
+.colums div {
+      width:30%;
+      
+      }
+ .item {
+      position: relative;
+      margin: 10px 0;}
+.btn-block {
+      margin-bottom: 5px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background:  #668099;
+      font-size: 16px;
+      color: rgb(2, 8, 12);
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #3b83d6;
+      }
+      }
+    
+      .colums {
+      display:flex;
+      justify-content:space-between;
+      flex-direction:row;
+      flex-wrap:wrap;
+      margin-top: -210px;
+      }
+     
+      }
+     
+      .banner {
+      position: relative;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+      }
+      .banner::after {
+      content: "";
+    
+      position: absolute;
+      width: 101.5%;
+      height: 35%;
+      margin-top: -20%;
+     
+    }
+    .btn-block{}
+    </style>
+</div>
+<div class="testbox">
+     <form method="POST" action="/RICList/ikatlo">
+        <div class="banner">
+          <h1>Other Information</h1>
+        </div>
+        </div>
+          <div class="colums">
+        <div class="item">
+            <p>Drug Allergy</p>
+            <select id="mySelect" onchange="myFunction()">
+  <option value="Yes">Yes
+  <option value="No">No
+</select>
+<div class="item">
+            <p>Insect Allergy</p>
+            <select id="mySelect" onchange="myFunction()">
+  <option value="Yes">Yes
+  <option value="No">No
+</select>
+<div class="item">
+  <div class="item">
+            <p>Food Allergy</p>
+            <select id="mySelect" onchange="myFunction()">
+  <option value="Yes">Yes
+  <option value="No">No
+</select>
+<br>
+<div class="item">
+
+            <p>Latex Allergy</p>
+            <select id="mySelect" onchange="myFunction()">
+  <option value="Yes">Yes
+  <option value="No">No
+</select>
+<div class="item">
+            <p>Mold Allergy</p>
+            <select id="mySelect" onchange="myFunction()">
+  <option value="Yes">Yes
+  <option value="No">No
+</select>
+<div class="item">
+        
+                          
+          {% csrf_token %}
+      <div class="btn-block">
+      <button type="order" >Submit</button>
+      </div>
+    </form>
+                        </div>
+            </div>
+            </div>
+    <script>    
+function myFunction() {
+  var x = document.getElementById("form__group registration__with-allergy");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+ </div></header></html>

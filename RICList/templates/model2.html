@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+</head>
+<header>
+     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+
+<ul class="nav-area">
+<li><a href="homepage.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+    <style>
+     
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, textarea, label, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: rgb(24, 25, 26);
+      line-height: 20px;
+    
+      }
+ input[type=submit]
+{
+margin-bottom: 20px;
+width:100%;
+padding: 20px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+background-color: #4180C5;
+color: aliceblue;
+font-size:15px;
+cursor:pointer;
+
+}
+#submit:hover
+{
+background-color: black;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+ position:relative;
+  margin-bottom: 80px;
+  font-weight: bold;
+  color:#191970;
+text-align: center;
+
+}
+      }
+      #check {
+        width: 100px;
+        height: 15px;
+        background: #555;
+        margin: 20px 10px;
+        position: relative;
+        border-radius: 5px;
+      }
+      .checkbox-example label {
+        display: block;
+        width: 50px;
+        height: 18px;
+        border-radius: 50%;
+        transition: all .5s ease;
+        cursor: pointer;
+        position: absolute;
+        top: -2px;
+        left: -3px;
+        background: #ccc;
+      }
+      .checkbox-example input[type=checkbox]:checked + label {
+        left: 27px;
+      }
+  
+     
+      .testbox {
+  
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 10px;
+      font-size: 40px;
+      color: rgb(1, 12, 12);
+      }
+     
+      .banner {
+      position: relative;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+      }
+      .banner::after {
+      content: "";
+    
+      position: absolute;
+      width: 101.5%;
+      height: 35%;
+      margin-top: -20%;
+     
+      }
+      input, select, textarea {
+      margin-bottom: 1px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+     
+      
+     
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+    
+      .colums {
+      display:flex;
+      justify-content:space-between;
+      flex-direction:row;
+      flex-wrap:wrap;
+      margin-top: -210px;
+      }
+      .colums div {
+      width:30%;
+      
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+
+      .btn-block {
+      margin-bottom: 5px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background:  #668099;
+      font-size: 16px;
+      color: rgb(2, 8, 12);
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #3b83d6;
+      }
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+    
+   
+     
+      }
+      p{
+         font-size: 20px;
+         color: rgb(236, 141, 52);
+         margin-left: 20%;
+     }
+     input[type=checkbox]}
+
+    </style>
+  </head>
+  <body>
+    <br><br>
+    <div class="testbox">
+     <form method="POST" action="/RICList/django">
+        <div class="banner">
+          <h1>Personal Information</h1>
+        </div>
+        <div class="model1">
+            <p>Branch</p>
+
+        </div>
+        <div class="colums">
+          <div class="item">
+            <label for="fname"> Full Name<span>*</span></label>
+            
+            <input id="location" type="text" placeholder="First Name Middle Initial Last Name" name="location" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> Address<span>*</span></label>
+            <input id="address1" type="text" placeholder="Complete Address "name="address" required/>
+          </div>
+          <div class="item">
+            <label for="email">Email<span>*</span></label>
+            <input id="zemail" type="text"  placeholder="Email Address "  name="zemail" required/>
+          </div>
+          <div class="item">
+            <label for="phil">Phil Health No.<span>*</span></label>
+            <br>
+            <input id="phil1" type="text"  placeholder="Phil Health "  name="Caddress" required/>
+          </div>
+          <div class="item">
+            <label for="contact">Contact No<span>*</span></label>
+            <input id="age" type="text"   name="age" required/>
+          </div>
+          <div class="item">
+
+            <label for="bday">Birthday<span>*</span></label>
+            <input id="rmday" type="date" name="rmday" required/>
+          </div>
+          <div class="item">
+            <label for="city">In Case of Emergency Please Contact<span>*</span></label>
+            <input id="Cnumber" type="tel"  placeholder="Name "  name="Cnumber" required/>
+          </div>
+          <div class="item">
+            <label for="rel"> Relationship<span>*</span></label>
+            <input id="rell" type="text" placeholder=" "   name="address" required/>
+          </div>
+          
+          <div class="item">
+            <label for="gender">Gender<span>*</span></label>
+            <input id="gend2" type="text" placeholder=" Male or Female "  name="primary" required/>
+          </div>
+          </div>
+  <input type="checkbox" name="agree" id="agree" value="yes" />
+  <label for="agree">By checking the box, I hereby certify that, to the best of my knowledge, the provided information is <br>true and accurate. </label>
+  <div style="visibility:hidden; color:red" id="agree_chk_error">
+  Can't proceed as you didn't agree to the terms!
+</div>
+<div class="btn-block">
+      <button type="order" >Proceed</button>
+<script >
+function validateForm(form)
+{
+    console.log("checkbox checked is ", form.agree.checked);
+    if(!form.agree.checked)
+    {
+        document.getElementById('agree_chk_error').style.visibility='visible';
+        return false;
+    }
+    else
+    {
+        document.getElementById('agree_chk_error').style.visibility='hidden';
+        return true;
+    }
+
+}
+</script>
+{% csrf_token %}
+   
+       
+      
+
+</div></body></header></html>
+ </div></header></html>

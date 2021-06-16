@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+</head>
+<header>
+     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+
+<ul class="nav-area">
+<li><a href="homepage.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<br><br><br><br><br>
+<br>
+<hr><hr>
+<style >
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 28px;
+  margin-right: 0;
+  font-weight: bold;
+  color:#191970;
+text-align: left;
+
+}
+.btn-block {
+      margin-top: 10px;
+      text-align: left;
+      margin-left: 100px;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background:  ;
+      font-size: 16px;
+      color: rgb(2, 8, 12);
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #3b83d6;
+      }
+      </style>
+<h1>Vaccination Details </h1>
+
+  <style > p{ text-indent:50px; margin-right: 50%;float: right;font-weight: bold; }
+</style>
+<hr><hr>
+<br>
+<form method="POST" action="/RICList/kanga">
+    <label for="name">Vaccine Name:</label>
+    <br>
+ <input type="text" type="text" placeholder="Brand Name eg. aztrazeneca" id="vax" required>
+  </div>
+
+<br>
+ <label for="address">First Dose:   </label>
+ (date given)
+ <br>
+    <input type="date" name="text" placeholder="Date Received" id="dat1" required>
+    <br>
+     <label for="address">Second  Dose:</label>
+     (date given)
+     <br>
+    <input type="date" name="email" placeholder="Date Received" id="dat2" required>
+    <br>
+    <label for="address">Vaccination Site:</label>
+    <br>
+    <input type="text" name="email" placeholder="" id="dat1" required>
+    <br>
+    <label for="address">Vaccinator:</label>
+    <br>
+    <input type="text" name="email" placeholder="" id="dat1" required>
+    <br>
+     <div class="btn-block">
+           
+        </div>
+
+<div class="btn-block">
+          {% csrf_token %}
+      <div class="btn-block">
+      <button type="order" >Proceed</button>
+      </div>
+    </form>
+
+    <br>
+    <style >
+
+      label {
+        font-weight: bold;
+        text-align: center;
+
+      }
+    </style>
+     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function() {
+         $("#button1").click(function() {
+            $("#dcom").attr('disabled', !$("#dcom").attr('disabled'));
+         });
+      });
+   </script>
+</head>

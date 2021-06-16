@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/css/Fhome.css">
+</head>
+<header>
+     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+<ul class="nav-area">
+<li><a href="homepage.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<head>
+</div> 
+<p>     
+<body>
+    <style >
+
+      label {
+        font-weight: bold;
+        text-align: center;
+        color:   #A52A2A;
+
+      }
+button {
+        display: inline-block;
+        background-color:#1E90FF;
+        border-radius: 1px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        margin-left:  250%;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        margin-top: 90px;
+        margin-left: 50px;
+}
+button:hover {
+      background:  #5F9EA0;
+      }
+  
+ <style>
+
+      }
+    </style>
+<div id="envelope">
+  <form method="POST" action="/RICList/candy">
+<label>Your Baranggay</label>
+<input name="text" placeholder="(e.g dasma)" type="text" width="100px;">
+<label>Your Municipality</label>
+<input name="text" placeholder="(e.g dasma)" type="text" width="100px;">
+<label>Region</label>
+<input name="text" placeholder="(e.g IV A)" type="text" width="100px;">
+<label></label>
+{% csrf_token %}
+      <div class="btn-block">
+      <button type="order" >Continue</button>
+      </div>
+    </form>
+
+</div> 
+  </div>
+</body>
+</html>

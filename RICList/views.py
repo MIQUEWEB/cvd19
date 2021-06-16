@@ -8,8 +8,17 @@ def HomePage(request):
 
 def view_list(request, municipality_id):
     municipality_ = Municipality.objects.get(id=municipality_id)
-    return render(request, 'registration.html', {'municipality': municipality_})
-
+    return render(request, 'model2.html', {'municipality': municipality_})
+def form_list(request):
+    return render(request,'model1.html')
+def candy_list(request):
+    return render(request,'model2.html')
+def django_list(request):
+    return render(request,'model3.html')
+def chuchay_list(request):
+    return render(request,'model4.html')
+def kanga_list(request):
+    return render(request,'model5.html')
 def new_list(request):
     municipal_= Municipality.objects.create()
     #municipal_= Municipality.objects.create(ukmunicipality=request.POST['flmunicipality'],yybaranggay=request.POST['zzbaranggay'])
@@ -20,6 +29,16 @@ def add_item(request, municipality_id):
     #Personal_Info.objects.create(zflname=request.POST['zvname'],znaddress=request.POST['xxaddress'],zpngender=request.POST['rjgender'],zpnumber=request.POST['contactn'],zvphilhealth=request.POST['philnumber'] ,zrmbirthday=request.POST['kkbirthday'],municipality=municipality_)
     return redirect(f'/RICList/{municipality_.id}/')
 
+def ikauna_list(request):
+    return render(request, 'model1.html')
+def two_list(request):
+    return render(request, 'model2.html')
+def ikatlo_list(request):
+    return render(request, 'model3.html')
+def ikaapat_list(request):
+    return render(request, 'model4.html')
+def ikalima_list(request):
+    return render(request, 'model5.html')
 
 def dataManipulation(request):
     municipality = Municipality (ukmunicipality="Dasma", yybaranggay="Paliparan III")

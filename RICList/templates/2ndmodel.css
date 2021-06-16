@@ -1,0 +1,318 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+     background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: 100% 50;
+    background-position: center center;
+    position: relative;
+    background-color:#F5F5DC;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color:#2F4F4F;
+text-decoration: none;
+padding: 5px 20px;
+font-family: serif;
+font-size: 16px;
+font-weight: bold;
+
+
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #A52A2A;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #00000;
+    text-transform: uppercase;
+    font-size: 60px;
+
+font-family: 'Staatliches', cursive;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #00000;
+
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #00000;
+}
+}
+.fname {
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right: 1px;
+width:50%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+
+}
+
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+
+.img {
+width: ;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+.nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+.welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;}
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+#fname {
+margin-bottom: 20px;
+margin-top: 10px;
+margin-left: 1x;
+margin-right: 1px;
+width:20%;
+padding: 5px;
+border:1px solid #7ac9b7;
+}
+#addre1{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:20px;
+margin-left: 10px;
+width:20%;
+padding: 5px;
+border:1px solid #7ac9b7;}
+
+#email{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:20px;
+margin-left: 10px;
+width:20%;
+padding: 5px;
+border:1px solid #7ac9b7;}
+#gend{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:20px;
+margin-left: 10px;
+width:20%;
+padding: 5px;
+border:1px solid #7ac9b7;}
+
+
+.button{
+ }
+.h1{
+  font-size: 20px;
+  color: #F0E68C;
+  text-transform: uppercase;
+  font-weight: 300;
+  float: center;
+  margin-bottom: 15px;
+
+}
+#phil{
+
+ margin-bottom: 20px;
+margin-top: 10px;
+margin-right:20px;
+margin-left: 22px;
+width:20%;
+padding: 5px;
+border:1px solid #7ac9b7;
+
+}
+#cat{
+
+ margin-bottom: 20px;
+margin-top: 10px;
+margin-right:20px;
+margin-left: 1px;
+width:20%;
+padding: 5px;
+border:1px solid #7ac9b7;
+
+}
+h2{
+  font-size: 20px;
+  color:#7ac9b7 ;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+.fieldset {
+}
+#vax{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:20px;
+margin-left: 20px;
+width:25%;
+padding: 5px;
+border:1px solid #7ac9b7;
+}
+#dat1{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:100px;
+margin-left: 20px;
+width:25%;
+padding: 5px;
+border:1px solid #7ac9b7;
+}
+#dat2{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:100px;
+margin-left: 20px;
+width:25%;
+padding: 5px;
+border:1px solid #7ac9b7;
+}
+#dcom{
+    margin-bottom: -100px;
+margin-top: 100px;
+margin-right:50px;
+margin-left: 100px;
+
+width:25%;
+padding: 5px;
+border:1px solid #7ac9b7;
+}
+}
+input[type=submit]
+{
+margin-bottom: 20px;
+width:100%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+background-color: #4180C5;
+color: aliceblue;
+font-size:15px;
+cursor:pointer;
+}
+#submit:hover
+{
+background-color: black;
+}
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+
+#vax{
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right:100px;
+margin-left: 20px;
+width:25%;
+padding: 5px;
+border:1px solid #7ac9b7;
+
+
+}
