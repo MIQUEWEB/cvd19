@@ -15,8 +15,8 @@
 </ul>
    <!-- <img src="https://www.cdc.gov/coronavirus/2019-ncov/downloads/vaccines/toolkits/protects-you-and-fam_social-square.jpg">
 <style>
-img{ 
- 
+img{
+
   width: 40%;
   height: 100%;
   float: right;
@@ -30,18 +30,150 @@ img{
       body {
        padding: 20px;
 }-->
-<style> 
+<style>
 label {
  font-size: 20px;
 font-weight: 700;
 color:#8B0000;
 
 }
+    <style>
+
+
+
+
+
+}
+ .btn-block {
+      margin-top: 10px;
+      text-align: left;
+      margin-left: 100px;
+      }
+      button {
+     display: block;
+  margin: 0 auto;
+  line-height: $font-size * 2;
+  padding: 0 20px;
+  background: $form-shadow;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0,0,0,1);
+  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
+  cursor:pointer;
+  float:center;
+  width:25%;
+
+
+
+      }
+      button:hover {
+      background: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid rgba(0,0,0,1);
+      }
+
+{
+
+}
+   .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      }
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+
+  padding: 25px;
+  background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+
+}
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color:#2F4F4F;
+text-decoration: none;
+padding: 5px 20px;
+font-family: serif;
+font-size: 16px;
+font-weight: bold;
+
+
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #A52A2A;
+}
+
+  form {
+
+
+        background: linear-gradient(to bottom, #ffffcc 0%, #ff9966 100%);
+
+  margin: auto auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 430px;
+}
+.formgroup{
+  margin: 10px 0px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: poppins;
+  margin-left:100px;
+
+
+
+
+}
+label {
+    color: #000000;}
+
+input[type=text]{
+margin-bottom: 1px;
+margin-top: 10px;
+padding: 15px;
+border-radius:5px;
+border:2px solid #ffbf00;
+ text-indent: 100px;
+margin-right: 50px;
+  width:35em;
+}
+h1{color:#191970;
+text-align:center;
+
+}}
 
 </style>
 
 <br> <br>
- <br> <br> <br> 
+ <br> <br> <br>
 
 <style >
 h1 {
@@ -55,7 +187,7 @@ h1 {
   color:#191970;
 text-align: center;
 }
-   
+
       @media (min-width: 568px) {
       .name-item, .city-item {
       display: flex;
@@ -65,7 +197,7 @@ text-align: center;
 }
 .colums div {
       width:30%;
-      
+
       }
  .item {
       position: relative;
@@ -78,7 +210,7 @@ text-align: center;
       width: 150px;
       padding: 10px;
       border: none;
-      border-radius: 5px; 
+      border-radius: 5px;
       background:  #668099;
       font-size: 16px;
       color: rgb(2, 8, 12);
@@ -88,7 +220,7 @@ text-align: center;
       background:  #3b83d6;
       }
       }
-    
+
       .colums {
       display:flex;
       justify-content:space-between;
@@ -96,9 +228,9 @@ text-align: center;
       flex-wrap:wrap;
       margin-top: -210px;
       }
-     
+
       }
-     
+
       .banner {
       position: relative;
       height: 300px;
@@ -106,16 +238,16 @@ text-align: center;
       justify-content: center;
       align-items: center;
       text-align: center;
-      
+
       }
       .banner::after {
       content: "";
-    
+
       position: absolute;
       width: 101.5%;
       height: 35%;
       margin-top: -20%;
-     
+
     }
     .btn-block{}
     </style>
@@ -124,62 +256,50 @@ text-align: center;
      <form method="POST" action="/RICList/ikatlo">
         <div class="banner">
           <h1>Other Information</h1>
-        </div>
-        </div>
-          <div class="colums">
-        <div class="item">
-            <p>Drug Allergy</p>
-            <select id="mySelect" onchange="myFunction()">
-  <option value="Yes">Yes
-  <option value="No">No
-</select>
-<div class="item">
-            <p>Insect Allergy</p>
-            <select id="mySelect" onchange="myFunction()">
-  <option value="Yes">Yes
-  <option value="No">No
-</select>
-<div class="item">
-  <div class="item">
-            <p>Food Allergy</p>
-            <select id="mySelect" onchange="myFunction()">
-  <option value="Yes">Yes
-  <option value="No">No
-</select>
-<br>
-<div class="item">
 
-            <p>Latex Allergy</p>
-            <select id="mySelect" onchange="myFunction()">
-  <option value="Yes">Yes
-  <option value="No">No
+  <label for="employed">With Comorbidity?</label>
+    <select class="form-control" id="employed">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+    </select>
+    <select class="com" id="com"
+                name="com">
+        <option value="00">00 &#x2013; None</option>
+        <option value="1">01 &#x2013; HYPERTENSION</option>
+<option value="2">02 &#x2013; HEART DISEASE</option>
+<option value="3">03 &#x2013; KIDNEY DISEASE</option>
+<option value="4">04 &#x2013; BRONCHIAL ASTHMA</option>
+<option value="5">05 &#x2013; IMMUNO DEFICIENCY</option>
+<option value="5">05 &#x2013; CANCER</option>
 </select>
-<div class="item">
-            <p>Mold Allergy</p>
-            <select id="mySelect" onchange="myFunction()">
-  <option value="Yes">Yes
-  <option value="No">No
+</div>
+<br>
+<label for="employed">With Allergy?</label>
+    <select class="form-control" id="employed">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+    </select>
+    <select class="com" id="com"
+                name="com"><option value="00">00 &#x2013; None</option>
+                option value="1">01 &#x2013; Drugs</option>
+<option value="2">02 &#x2013;Food</option>
+<option value="3">03 &#x2013;Insect</option>
+<option value="4">04 &#x2013; Latex</option>
+<option value="5">05 &#x2013; Pet</option>
+<option value="5">05 &#x2013; Pollen</option>
+<option value="6">06 &#x2013; Mold</option>
 </select>
-<div class="item">
-        
-                          
+<BR><br>
+<label for="employed">Diagnosed with COVID-19?</label>
+<select class="form-control" id="covido">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+
           {% csrf_token %}
       <div class="btn-block">
       <button type="order" >Submit</button>
       </div>
     </form>
-                        </div>
-            </div>
-            </div>
-    <script>    
-function myFunction() {
-  var x = document.getElementById("form__group registration__with-allergy");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
 </script>
 
  </div></header></html>

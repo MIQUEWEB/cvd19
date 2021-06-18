@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
 </head>
 <header>
@@ -13,251 +15,273 @@
 <li><a href="services.html">Services</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
-    <style>
-     
-      html, body {
-      min-height: 100%;
-      }
-      body, div, form, input, select, textarea, label, p { 
-      padding: 0;
-      margin: 0;
-      outline: none;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 14px;
-      color: rgb(24, 25, 26);
-      line-height: 20px;
-    
-      }
- input[type=submit]
-{
-margin-bottom: 20px;
-width:100%;
-padding: 20px;
-border-radius:5px;
-border:1px solid #7ac9b7;
-background-color: #4180C5;
-color: aliceblue;
-font-size:15px;
-cursor:pointer;
+
+ <style>
+
+
 
 }
-#submit:hover
-{
-background-color: black;
-}
-h1 {
-  display: block;
-  font-size: 2em;
- position:relative;
-  margin-bottom: 80px;
-  font-weight: bold;
-  color:#191970;
-text-align: center;
+.button1 {
+      display: block;
+  margin: 0 auto;
+  line-height: $font-size * 2;
+  padding: 0 20px;
+  background: $form-shadow;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0,0,0,1);
+  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
+  cursor:pointer;
+  float:center;
 
-}
-      }
-      #check {
-        width: 100px;
-        height: 15px;
-        background: #555;
-        margin: 20px 10px;
-        position: relative;
-        border-radius: 5px;
-      }
-      .checkbox-example label {
-        display: block;
-        width: 50px;
-        height: 18px;
-        border-radius: 50%;
-        transition: all .5s ease;
-        cursor: pointer;
-        position: absolute;
-        top: -2px;
-        left: -3px;
-        background: #ccc;
-      }
-      .checkbox-example input[type=checkbox]:checked + label {
-        left: 27px;
-      }
-  
-     
-      .testbox {
-  
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      padding: 10px;
-      font-size: 40px;
-      color: rgb(1, 12, 12);
-      }
-     
-      .banner {
-      position: relative;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      
-      }
-      .banner::after {
-      content: "";
-    
-      position: absolute;
-      width: 101.5%;
-      height: 35%;
-      margin-top: -20%;
-     
-      }
-      input, select, textarea {
-      margin-bottom: 1px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      }
-      input {
-      width: calc(100% - 10px);
-      padding: 5px;
-      }
-     
-      
-     
-      .item {
-      position: relative;
-      margin: 10px 0;
-      }
-    
-      .colums {
-      display:flex;
-      justify-content:space-between;
-      flex-direction:row;
-      flex-wrap:wrap;
-      margin-top: -210px;
-      }
-      .colums div {
-      width:30%;
-      
-      }
-      input[type="date"]::-webkit-inner-spin-button {
-      display: none;
-      }
 
-      .btn-block {
-      margin-bottom: 5px;
-      text-align: center;
-      }
-      button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px; 
-      background:  #668099;
-      font-size: 16px;
-      color: rgb(2, 8, 12);
-      cursor: pointer;
+
+
       }
       button:hover {
-      background:  #3b83d6;
-      }
-      @media (min-width: 568px) {
-      .name-item, .city-item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      }
-    
-   
-     
-      }
-      p{
-         font-size: 20px;
-         color: rgb(236, 141, 52);
-         margin-left: 20%;
-     }
-     input[type=checkbox]}
+      background: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid rgba(0,0,0,1);
+      float:center;
 
-    </style>
-  </head>
-  <body>
-    <br><br>
-    <div class="testbox">
-     <form method="POST" action="/RICList/django">
-        <div class="banner">
-          <h1>Personal Information</h1>
-        </div>
-        <div class="model1">
-            <p>Branch</p>
+      }
 
-        </div>
-        <div class="colums">
-          <div class="item">
-            <label for="fname"> Full Name<span>*</span></label>
-            
-            <input id="location" type="text" placeholder="First Name Middle Initial Last Name" name="location" required/>
-          </div>
-          <div class="item">
-            <label for="lname"> Address<span>*</span></label>
-            <input id="address1" type="text" placeholder="Complete Address "name="address" required/>
-          </div>
-          <div class="item">
-            <label for="email">Email<span>*</span></label>
-            <input id="zemail" type="text"  placeholder="Email Address "  name="zemail" required/>
-          </div>
-          <div class="item">
-            <label for="phil">Phil Health No.<span>*</span></label>
-            <br>
-            <input id="phil1" type="text"  placeholder="Phil Health "  name="Caddress" required/>
-          </div>
-          <div class="item">
-            <label for="contact">Contact No<span>*</span></label>
-            <input id="age" type="text"   name="age" required/>
-          </div>
-          <div class="item">
 
-            <label for="bday">Birthday<span>*</span></label>
-            <input id="rmday" type="date" name="rmday" required/>
-          </div>
-          <div class="item">
-            <label for="city">In Case of Emergency Please Contact<span>*</span></label>
-            <input id="Cnumber" type="tel"  placeholder="Name "  name="Cnumber" required/>
-          </div>
-          <div class="item">
-            <label for="rel"> Relationship<span>*</span></label>
-            <input id="rell" type="text" placeholder=" "   name="address" required/>
-          </div>
-          
-          <div class="item">
-            <label for="gender">Gender<span>*</span></label>
-            <input id="gend2" type="text" placeholder=" Male or Female "  name="primary" required/>
-          </div>
-          </div>
-  <input type="checkbox" name="agree" id="agree" value="yes" />
-  <label for="agree">By checking the box, I hereby certify that, to the best of my knowledge, the provided information is <br>true and accurate. </label>
-  <div style="visibility:hidden; color:red" id="agree_chk_error">
-  Can't proceed as you didn't agree to the terms!
-</div>
-<div class="btn-block">
-      <button type="order" >Proceed</button>
-<script >
-function validateForm(form)
+      *
 {
-    console.log("checkbox checked is ", form.agree.checked);
-    if(!form.agree.checked)
-    {
-        document.getElementById('agree_chk_error').style.visibility='visible';
-        return false;
-    }
-    else
-    {
-        document.getElementById('agree_chk_error').style.visibility='hidden';
-        return true;
-    }
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+     background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: 100% 50;
+    background-position: center center;
+    position: relative;
+    background-color:#F5F5DC;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color:#2F4F4F;
+text-decoration: none;
+padding: 5px 20px;
+font-family: serif;
+font-size: 16px;
+font-weight: bold;
+
+
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #A52A2A;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #00000;
+    text-transform: uppercase;
+    font-size: 60px;
+
+font-family: 'Staatliches';
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #00000;
 
 }
-</script>
-{% csrf_token %}
-   
-       
-      
+.welcome-text a:hover{
+    background: #fff;
+    color: #00000;
+}
+}
 
-</div></body></header></html>
- </div></header></html>
+}
+
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+
+.img {
+width: ;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+.nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+.welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;}
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+p {
+background: linear-gradient(to bottom, #ffffcc 0%, #ff9966 100%);
+
+  margin: auto auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+
+  top: 0;
+  bottom: 0;
+  margin-left:24px;
+  right: 70;
+  width: 120px;
+font-size:10px;
+margin-top:50px;
+}
+
+    </style>
+<div class="welcome-text">
+<h1>
+Fight COVID! Lets Vaccinate</h1>
+    {% csrf_token %}
+      <button type="order"> <a href="/RICList/form"> Create a Record</a> </button>
+      </div>
+    </form>
+      </div>
+    </form>
+    <br>
+<div id="theDIV">
+
+<br><p>When You’ve Been Fully Vaccinated
+            *If you are fully vaccinated, you can resume<br>
+ activities that you did before the pandemic.<br>
+*Fully vaccinated people can resume activities <br>
+without wearing a mask or physically distancing, <br>
+except where required by federal, state, local,<br>
+ tribal, or territorial laws, rules, and <br>
+regulations, including local business and <br>
+ workplace guidance.</p>
+</div>
+
+<!-- A button element with class "button" that will execute "hideOrShow()" function upon clicking -->
+<br><br><br><br><br><br><br>
+<div id="edi">
+<button class="button button1" onclick="hideOrShow()">
+  What you need to know
+</button>
+</div>
+<script>
+
+// A function that hides or shows a selected element
+function hideOrShow() {
+
+  // Select the element with id "theDIV"
+  var x = document.getElementById("theDIV");
+
+  // If selected element is hidden
+  if (x.style.display === "none") {
+
+    // Show the hidden element
+    x.style.display = "block";
+
+    // Else if the selected element is shown
+  } else {
+
+    // Hide the element
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+
+
+
+
+</html>

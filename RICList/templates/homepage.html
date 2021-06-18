@@ -14,65 +14,217 @@
 <li><a href="about.html">About</a></li>
 <li><a href="services.html">Services</a></li>
 <li><a href="contact.html">Contact</a></li>
-</ul> 
-<style >
-    p{
-        color:#8B0000;
-        font-size: 25px;
-        font: bold;
-    }
-    #dialog {
-  border: solid gray 2px;
-  border-radius: 10px;
-  margin-bottom: 10%;
-  text-align: center;
-font-size: 25px;
-float: center;
-}
+</ul>
 
-#dia{
-    width: 10%;
-    margin-bottom: 50px;
-    float: left;}
-}
-#infos {
-    margin-top: 50px;
-    margin-right: 5px;
-                    margin-left: 5px;
-}
-button {
-        display: inline-block;
-        background-color:#87CEFA;
-        border-radius: 10px;
-        border: 4px double #cccccc;
-        color: #eeeeee;
-        margin-left:  250%;
-        font-size: 28px;
-        padding: 20px;
-        width: 200px;
-        margin-top: 90px;
-        margin-left: 50px;
-}
  <style>
-      
-      
-      button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px; 
-      background:  #1a55a1;
-      font-size: 17px;
-      color: #fff;
-      cursor: pointer;
-      margin-top: 10px;
-      font-family: 'Space Mono', monospace;
+
+
+
+}
+.button1 {
+      display: block;
+  margin: 0 auto;
+  line-height: $font-size * 2;
+  padding: 0 20px;
+  background: $form-shadow;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0,0,0,1);
+  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
+  cursor:pointer;
+  float:center;
+
+
+
+
       }
       button:hover {
-      background:  #5F9EA0;
+      background: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid rgba(0,0,0,1);
+      float:center;
+
       }
-  
-      
+
+
+      *
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+     background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: 100% 50;
+    background-position: center center;
+    position: relative;
+    background-color:#F5F5DC;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color:#2F4F4F;
+text-decoration: none;
+padding: 5px 20px;
+font-family: serif;
+font-size: 16px;
+font-weight: bold;
+
+
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #A52A2A;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #00000;
+    text-transform: uppercase;
+    font-size: 60px;
+
+font-family: 'Staatliches';
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #00000;
+
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #00000;
+}
+}
+
+}
+
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+
+.img {
+width: ;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+.nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+.welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;}
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+p {
+background: linear-gradient(to bottom, #ffffcc 0%, #ff9966 100%);
+
+    margin: auto auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+
+    top: 0;
+    bottom: 0;
+    margin-left:24px;
+    right: 70;
+    width: 120px;
+font-size:10px;
+margin-top:50px;
+}
+
     </style>
 <div class="welcome-text">
 <h1>
@@ -83,12 +235,10 @@ Fight COVID! Lets Vaccinate</h1>
     </form>
       </div>
     </form>
-<button name="infos" id="dia" value="infos">What you need to know</button></a>
-</header>
-        <dialog id="infos">
-            <p> When You’ve Been Fully Vaccinated</p><br>
-<img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/home/vaccine-we-can-do-sticker.jpg" style="width: 50%">
-<br>
+    <br>
+<div id="theDIV">
+
+<br><p>When You’ve Been Fully Vaccinated
             *If you are fully vaccinated, you can resume<br>
  activities that you did before the pandemic.<br>
 *Fully vaccinated people can resume activities <br>
@@ -96,30 +246,42 @@ without wearing a mask or physically distancing, <br>
 except where required by federal, state, local,<br>
  tribal, or territorial laws, rules, and <br>
 regulations, including local business and <br>
- workplace guidance.</p> 
+ workplace guidance.</p>
+</div>
 
-            <button id="hide">Close</button>         
-        </dialog>
+<!-- A button element with class "button" that will execute "hideOrShow()" function upon clicking -->
+<br><br><br><br><br><br><br>
+<div id="edi">
+<button class="button button1" onclick="hideOrShow()">
+  What you need to know
+</button>
+</div>
+<script>
 
-        </div>
-  
- <script>
-        var a = document.getElementById('dia');
-        a.addEventListener('click', function opn(){
-        document.getElementById('infos').open = true;
+// A function that hides or shows a selected element
+function hideOrShow() {
 
-        var d = document.getElementById('hide');
-        d.addEventListener('click', z);
+  // Select the element with id "theDIV"
+  var x = document.getElementById("theDIV");
 
-        function z(){
-        infos.close();
-        }
-        });
+  // If selected element is hidden
+  if (x.style.display === "none") {
 
-    </script>
-     
+    // Show the hidden element
+    x.style.display = "block";
 
- 
-        
+    // Else if the selected element is shown
+  } else {
+
+    // Hide the element
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+
+
+
 
 </html>
