@@ -2,216 +2,88 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
-  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="/static/css/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
 </head>
 <header>
-     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+<nav>
+        <ul>
+        <li>
+            <a href="http://cvd19.ph">Home</a>
+          </li>
+            
+              <a href="/form_list">PLACE</a>
+               </li>
+           
+              <a href="/candy_list">Personal Info</a>
+               </li>
+           
+              <a href="/django_list">Employment</a>
+               </li>
+               
+              <a href="/chuchay_list">Vaccination</a>
+               </li>
+             
+              <a href="/kanga_list">Other Info</a>
+               </li>
 
-<ul class="nav-area">
-<li><a href="homepage.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
-    <style>
- .btn-block {
-      margin-top: 10px;
-      text-align: center;
-      margin-left: 100px;
-      }
-      button {
-     display: block;
-  margin: 0 auto;
-  line-height: $font-size * 2;
-  padding: 0 20px;
-  background: $form-shadow;
-  letter-spacing: 2px;
-  transition: .2s all ease-in-out;
-  outline: none;
-  border: 1px solid rgba(0,0,0,1);
-  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
-  cursor:pointer;
-  float:center;
-  width:25%;
-  margin-right:50px;
-  margin-left:155px;
-
-
-
-      }
-      button:hover {
-      background: rgba(0,0,0,1);
-    color: white;
-    border: 1px solid rgba(0,0,0,1);
-      }
-
-{
-
-}
-   .item {
-      position: relative;
-      margin: 10px 0;
-      }
-      }
-body{
-    font-family: 'Lato', sans-serif;
-}
-.wrapper{
-    width: 1170px;
-    margin: auto;
-}
-
-
-header{
-
-  padding: 25px;
-  background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-
-
-}
-}
-.nav-area{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-.nav-area li{
-    display: inline-block;
-}
-.nav-area li a {
-color:#2F4F4F;
-text-decoration: none;
-padding: 5px 20px;
-font-family: serif;
-font-size: 16px;
-font-weight: bold;
-
-
-text-transform: uppercase;
-}
-.nav-area li a:hover{
-    background: #fff;
-    color: #A52A2A;
-}
-
-  form {
-
-
-        background: linear-gradient(to bottom, #ffffcc 0%, #ff9966 100%);
-
-  margin: auto auto;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #000;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 500px;
-  height: 430px;
-}
-.formgroup{
-  margin: 10px 0px;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-family: poppins;
-  margin-left:100px;
-
-
-
-
-}
-label {
-    color: #000000;}
-
-input[type=text]{
-margin-bottom: 1px;
-margin-top: 10px;
-padding: 15px;
-border-radius:5px;
-border:2px solid #ffbf00;
- text-indent: 100px;
-margin-right: 50px;
-  width:35em;
-}
-h1{color:#191970;
-text-align:center;
-
-}}
-
-
-
-
-
-
-</style>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <body>
 
   </head>
   <body>
-    <br><br>
-     <br>
+    <section>
     <div class="testbox">
      <form method="POST" action="/RICList/chuchay">
-         <br><br>
-        <div class="banner">
+  <h2>Employment Details</h2>
+        <div class="item">
+   
+ <label for="employed">Are you Employed?</label><br>
+ <label> YES </label> <input type="radio" onclick="modefunc();" name="yesno" id="comor"> 
+   <label> NO </label><input type="radio" name="yesno" id="moc">
 
-            <h1>Employment Details</h1>
-
-    <label for="employed">Are you Employed?</label>
-    <select class="form-control" id="employed">
-          <option value="no">No</option>
-          <option value="yes">Yes</option>
-    </select>
-<br><br>
-        <label for="employed">Employment Status</label>
+             <div id="tycomor" style="display:none">  
+        <label for="employed">Employment Status:</label>
  <select class="form-control" id="otherFieldGroupDiv"required>
           <option value="Government Employed">Government Employed</option>
           <option value="Private Employed">Private Employed</option>
            <option value="Self-employed">Self-employed</option>
            <option value="Others">Others</option>
     </select>
-  </div>
-  <div class="form-group" >
 <br>
-        <label for="otherField1">Occupation</label>
+        <label for="otherField1">Occupation:</label>
         <br>
         <input type="text" class="form-control w-100" id="em" required>
-      </div>
-
-      <div class="form-group">
-<label for="EN">Employer Name</label>
+<label for="EN">Employer Name:</label>
 <br>
         <input type="text" class="form-control w-100" id="em" required>
-      </div>
-      <br>
-      <div class="form-group">
-      <label for="EA">Employer Address</label>
+      <label>Employer Address:</label>
       <br>
         <input type="text" class="form-control w-100" id="em" required>
-      </div>
-
-
-    </div>
-  </div>
-
-
-  </div>
-   <div class="btn-block">
+      </div></div>
+      
+   
+ <div class="btn-class">
           {% csrf_token %}
       <div class="btn-block">
       <button type="order" id="button">Proceed</button>
       </div>
     </form>
+  </div>
 
-    </body>
-     </style>
+
+
+  <br><br>
+
+
+
+ 
      <script src = ""></script>
    <script>
       $(document).ready(function() {
@@ -219,6 +91,21 @@ text-align:center;
             $("#dcom").attr('disabled', !$("#dcom").attr('disabled'));
          });
       });
-</html>
 
- </div></header></html>
+function modefunc(){
+            if (document.getElementById('comor').checked == true){
+                document.getElementById("tycomor").style.display = 'block';
+                document.getElementById("mm").style.display = 'none';
+            }
+            if (document.getElementById('alle').checked == true){
+                document.getElementById("mm").style.display = 'block';
+                document.getElementById("tycomor").style.display = 'none';
+            }
+        }
+    </script>
+
+
+    </script>
+  </div>
+
+</html>

@@ -1,162 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/about.css">
 </head>
 <header>
-     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+     <meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="/static/css/model.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
+</head>
+<header>
+ <nav>
+        <ul>
+        <li>
+            <a href="http://cvd19.ph">Home</a>
+          </li>
+            
+              <a href="/form_list">PLACE</a>
+               </li>
+           
+              <a href="/candy_list">Personal Info</a>
+               </li>
+           
+              <a href="/django_list">Employment</a>
+               </li>
+               
+              <a href="/chuchay_list">Vaccination</a>
+               </li>
+             
+              <a href="/kanga_list">Other Info</a>
+               </li>
 
-<ul class="nav-area">
-<li><a href="homepage.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
-<br><br><br>
-
-<style>
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 28px;
-  margin-right: 0;
-  font-weight: bold;
-  color:#191970;
-text-align: left;
-
-}
-
-
-
-}
- .btn-block {
-      margin-top: 10px;
-      text-align: left;
-      margin-left: 100px;
-      }
-      button {
-     display: block;
-  margin: 0 auto;
-  line-height: $font-size * 2;
-  padding: 0 20px;
-  background: $form-shadow;
-  letter-spacing: 2px;
-  transition: .2s all ease-in-out;
-  outline: none;
-  border: 1px solid rgba(0,0,0,1);
-  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
-  cursor:pointer;
-  float:center;
-  width:50%;
-
-
-
-      }
-      button:hover {
-      background: rgba(0,0,0,1);
-    color: white;
-    border: 1px solid rgba(0,0,0,1);
-      }
-
-{
-
-}
-   .item {
-      position: relative;
-      margin: 10px 0;
-      }
-      }
-body{
-    font-family: 'Lato', sans-serif;
-}
-.wrapper{
-    width: 1170px;
-    margin: auto;
-}
-
-   header{
-
-  padding: 25px;
-  background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-
-
-}
-}
-.nav-area{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-.nav-area li{
-    display: inline-block;
-}
-.nav-area li a {
-color:#2F4F4F;
-text-decoration: none;
-padding: 5px 20px;
-font-family: serif;
-font-size: 16px;
-font-weight: bold;
-
-
-text-transform: uppercase;
-}
-.nav-area li a:hover{
-    background: #fff;
-    color: #A52A2A;
-}
-
-  form {
-
-
-        background: linear-gradient(to bottom, #ffffcc 0%, #ff9966 100%);
-
-  margin: auto auto;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #000;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 500px;
-  height: 430px;
-}
-.formgroup{
-  margin: 10px 0px;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-family: poppins;
-  margin-left:100px;
-
-
-
-
-}
-label {
-    color: #000000;}
-
-input[type=text]{
-margin-bottom: 1px;
-margin-top: 10px;
-padding: 15px;
-border-radius:5px;
-border:2px solid #ffbf00;
- text-indent: 100px;
-margin-right: 50px;
-  width:35em;
-}
-
-      </style>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<article>
+  <br><br>
+<section>
       <br>
 <form method="POST" action="/RICList/kanga">
     <h1> Vaccine Information</h1>
@@ -184,13 +68,10 @@ margin-right: 50px;
     <br>
     <input type="text" name="email" placeholder="" id="dat1" required>
     <br>
-     <div class="btn-block">
-
         </div>
 <br>
-<div class="btn-block">
           {% csrf_token %}
-      <div class="btn-block">
+      <div class="btn-order">
       <button type="order" >Proceed</button>
       </div>
     </form>

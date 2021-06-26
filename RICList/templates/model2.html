@@ -2,260 +2,196 @@
 <html>
 <head>
   <meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
 </head>
 <header>
-     <img src="https://i.unu.edu/media/ias.unu.edu-en/news/18602/COVID19_RESPONSE_LOGO_HORIZONTAL_APRIL_2020.png" style="width:200px;height:80px; margin-left: 20; float:left">
+<nav>
+        <ul>
+        <li>
+            <a href="http://cvd19.ph">Home</a>
+          </li>
+            
+              <a href="/form_list">PLACE</a>
+               </li>
+           
+              <a href="/candy_list">Personal Info</a>
+               </li>
+           
+              <a href="/django_list">Employment</a>
+               </li>
+               
+              <a href="/chuchay_list">Vaccination</a>
+               </li>
+             
+              <a href="/kanga_list">Other Info</a>
+               </li>
 
-<ul class="nav-area">
-<li><a href="homepage.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
- <style>
-
-
-
-}
-.button1 {
-      display: block;
-  margin: 0 auto;
-  line-height: $font-size * 2;
-  padding: 0 20px;
-  background: $form-shadow;
-  letter-spacing: 2px;
-  transition: .2s all ease-in-out;
-  outline: none;
-  border: 1px solid rgba(0,0,0,1);
-  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
-  cursor:pointer;
-  float:center;
-
-
-
-
-      }
-      button:hover {
-      background: rgba(0,0,0,1);
-    color: white;
-    border: 1px solid rgba(0,0,0,1);
-      float:center;
-
-      }
-
-
-      *
-{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: 'Lato', sans-serif;
-}
-.wrapper{
-    width: 1170px;
-    margin: auto;
-}
-header{
-     background:url(https://yalibnan.com/wp-content/uploads/2020/07/COVID-19-Vaccine-race-1024x768.jpg);
-    height: 100vh;
-    -webkit-background-size: cover;
-    background-size: 100% 50;
-    background-position: center center;
-    position: relative;
-    background-color:#F5F5DC;
-}
-.nav-area{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-.nav-area li{
-    display: inline-block;
-}
-.nav-area li a {
-color:#2F4F4F;
-text-decoration: none;
-padding: 5px 20px;
-font-family: serif;
-font-size: 16px;
-font-weight: bold;
-
-
-text-transform: uppercase;
-}
-.nav-area li a:hover{
-    background: #fff;
-    color: #A52A2A;
-}
-.logo{
-    float: left;
-}
-.logo img{
-    width: 100%;
-    padding: 15px 0;
-}
-.welcome-text{
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    margin: 20% 30%;
-    text-align: center;
-}
-.welcome-text h1{
-    text-align: center;
-    color: #00000;
-    text-transform: uppercase;
-    font-size: 60px;
-
-font-family: 'Staatliches';
-}
-.welcome-text a{
-    border: 1px solid #fff;
-    padding: 10px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 20px;
-    display: inline-block;
-    color: #00000;
-
-}
-.welcome-text a:hover{
-    background: #fff;
-    color: #00000;
-}
-}
-
-}
-
-/*resposive*/
-
-@media (max-width:600px){
-    .wrapper {
-width: 100%;
-}
-.logo {
-float: none;
-width: 50%;
-text-align: center;
-margin: auto;
-}
-
-.img {
-width: ;
-}
-.nav-area {
-float: none;
-margin-top: 0;
-}
-.nav-area li a {
-padding: 5px;
-font-size: 11px;
-}
-.nav-area {
-text-align: center;
-}
-.welcome-text {
-width: 100%;
-height: auto;
-margin: 30% 0;
-}
-    .welcome-text h1 {
-font-size: 30px;
-}
-.header:after {
-    content: "";
-    display: table;
-    clear: both;}
-}
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-p {
-background: linear-gradient(to bottom, #ffffcc 0%, #ff9966 100%);
-
-  margin: auto auto;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #000;
-
-  top: 0;
-  bottom: 0;
-  margin-left:24px;
-  right: 70;
-  width: 120px;
-font-size:10px;
-margin-top:50px;
-}
-
-    </style>
-<div class="welcome-text">
-<h1>
-Fight COVID! Lets Vaccinate</h1>
-    {% csrf_token %}
-      <button type="order"> <a href="/RICList/form"> Create a Record</a> </button>
-      </div>
-    </form>
-      </div>
-    </form>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+  <body>
+<article>
+    <br>  <br>  
+  <section>
     <br>
-<div id="theDIV">
+    <div class="testbox">
+     <form method="POST" action="/RICList/django_list">
+        {% csrf_token %}
+     <h2>Personal Information</h2>
+        <div class="banner">
 
-<br><p>When You’ve Been Fully Vaccinated
-            *If you are fully vaccinated, you can resume<br>
- activities that you did before the pandemic.<br>
-*Fully vaccinated people can resume activities <br>
-without wearing a mask or physically distancing, <br>
-except where required by federal, state, local,<br>
- tribal, or territorial laws, rules, and <br>
-regulations, including local business and <br>
- workplace guidance.</p>
+        </div>
+        <br><br>
+        <div class="model1">
+
+
+        </div>
+
+        <div class="colums">
+
+          <div class="item">
+
+            <label for="fname"> Full Name<span>*</span></label>
+
+            <input id="fname" type="text" placeholder="First Name Middle Initial Last Name" name="fname" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> Address<span>*</span></label>
+            <input id="address1" type="text" placeholder="Complete Address "name="address1" required/>
+          </div>
+          <div class="item">
+            <label for="email">Email<span>*</span></label>
+            <input id="zemail" type="text"  placeholder="cvd19ph@gmai.com " name="zemail" required/>
+          </div>
+          <div class="item">
+            <label for="phil">Phil Health No.<span>*</span></label>
+            <br>
+            <input id="phil1" maxlength="12"type="text"  placeholder="Phil Health "  name="phil1" onkeypress="return onlyNumberKey(event)" required/>
+          </div>
+          <div class="item">
+            <label for="contact">Contact No<span>*</span></label>
+            <input id="cn" type="text" maxlength="11" onkeypress="return onlyNumberKey(event)" placeholder="+63 966 164-540" name="cn" required/>
+          </div>
+
+
+          <div class="item">
+            <label for="city">In Case of Emergency Please Contact<span>*</span></label>
+            <input id="Cnumber" type="tel"  placeholder="Name "  name="Cnumber" required/>
+          </div>
+          <div class="item">
+            <label for="rel"> Relationship<span>*</span></label>
+            <input id="rell" type="text" placeholder=" "   name="rell" required/>
+          </div>
+          <div class="item">
+              <label>Category:</label>
+           <select class="com" id="com"
+                name="com" size="width:40%">
+                <option value="1"> &#x2013; A1: (Frontline workers janitors, barangay health workers, etc.) </option>
+<option value="2"> &#x2013;A2:Senior citizens aged 60 years old and above </option>
+<option value="3"> &#x2013;A3: Persons with comorbidities</option>
+<option value="4"> &#x2013; A4: Frontline personnel in essential sectors</option>
+<option value="5"> &#x2013;A5: Indigent population</option>
+</select></div>
+<br>
+          <div class="item">
+
+      <label>Gender:</label>
+           <select class="com" id="cmm"
+                name="cmm">
+           
+                <option value="1"> &#x2013; MALE </option>
+<option value="2"> &#x2013;FEMALE</option>
+</select>
+          </div>
+          </div>
+          <br>
+             <div class="item">
+              <br>
+<b> Age: <input type=text id =DOB name=DOB onkeypress=return onlyNumberKey(event) maxlength=3> </b>
+<span id = "message" style="color:blue"> </span> <br><br>
 </div>
 
-<!-- A button element with class "button" that will execute "hideOrShow()" function upon clicking -->
-<br><br><br><br><br><br><br>
-<div id="edi">
-<button class="button button1" onclick="hideOrShow()">
-  What you need to know
-</button>
-</div>
+      <button type="order" onclick='checkEmail()' >Proceed</button>
+
+    </form></div></section></article></center>
+</body>
+<br><br><br>
+
+<aside>
+ <div class="flex"><div class="one">
+<h2>IMPORTANCE OF COVID VACCINE RECORD</h2>
+<br>
+<h1>
+   * The covid vaccine record contain important information about you and the vaccine you received.<br>
+    * In the long term, the covid vaccine record may serve to gain access to events and travel. <br>
+   * If you lose your card, you can retain your information here as a proof you got covid19 vaccinate.<br></h1>
+
+ 
+       
+       </h1></h1></div></div></aside>
+       <table id="usertab">
+
+{% for Personal_Info in municipality.Personal_Info_set.all %}
+        <tr>
+            <!{{ forloop.counter }}:  -->
+            <td>{{ forloop.counter }} : {{Personal_Info.rlname }}</td>
+            <td>{{ Personal_Info.zflname }}</td>
+            <td>{{ Personal_Info.znaddress }}</td>
+            <td>{{ Personal_Info.zvphil }}</td>
+            <td>{{ Personal_Info.zpnumber }}</td>
+            <td>{{ Personal_Info.zemerg }}</td>
+            <td>{{ Personal_Info.hhrelat }}</td>
+            <td>{{ Personal_Info.rmgender }}</td>
+            <td>{{ Personal_Info.zbirth }}</td>
+        
+        </tr> {% endfor %} </table>
+     </div></aside>
+
+<script >
+function validateForm(form)
+{
+    console.log("checkbox checked is ", form.agree.checked);
+    if(!form.agree.checked)
+    {
+        document.getElementById('agree_chk_error').style.visibility='visible';
+        return false;
+    }
+    else
+    {
+        document.getElementById('agree_chk_error').style.visibility='hidden';
+        return true;
+    }
+
+
+
+</script>
+<script>
+function onlyNumberKey(evt) {
+         
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+    function checkEmail() {
+
+        var email = document.getElementById('zemail');
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!filter.test(email.value)) {
+            alert('Please provide a valid email address');
+            email.focus;
+            return false;
+        }
+    }
+</script>
+  
 <script>
 
 // A function that hides or shows a selected element
@@ -279,9 +215,10 @@ function hideOrShow() {
 }
 
 </script>
+{% csrf_token %}
 
 
 
 
-
-</html>
+</div></body></header></html>
+ </div></header></html>

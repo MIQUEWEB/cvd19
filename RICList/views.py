@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from RICList.models import Municipality, Personal_Info
+from RICList.models import Municipality, Personal_Info, Employment, Vaccination_Details, Comorbidities
+
 
 def HomePage(request):
     municipalitys= Municipality.objects.all()
@@ -28,6 +29,10 @@ def add_item(request, municipality_id):
     municipality_ = Municipality.objects.get(id=municipality_id)
     #Personal_Info.objects.create(zflname=request.POST['zvname'],znaddress=request.POST['xxaddress'],zpngender=request.POST['rjgender'],zpnumber=request.POST['contactn'],zvphilhealth=request.POST['philnumber'] ,zrmbirthday=request.POST['kkbirthday'],municipality=municipality_)
     return redirect(f'/RICList/{municipality_.id}/')
+def about(request):
+    return render(request,'about.html')
+def contact(request):
+    return render(request,'contact.html')
 
 def ikauna_list(request):
     return render(request, 'model1.html')
@@ -123,3 +128,4 @@ def dataManipulation(request):
  #create your views here.
   # return HttpResponse('homepage')
   
+

@@ -112,8 +112,10 @@ width: 100%;
 height: auto;
 margin: 30% 0;
 }
-    .welcome-text h1 {
+.welcome-text h1 {
 font-size: 30px;
+font-family: 'Stint Ultra Condensed', cursive;
+
 }
 .header:after {
     content: "";

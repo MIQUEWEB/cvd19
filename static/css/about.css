@@ -1,0 +1,342 @@
+@import url (https://fonts.gooogleapis.com/css?family=Mukta+Malar+Narrow);
+
+html {
+
+background-size: 8px 8px;
+}
+}
+p.top-tip {
+border:4px dashed
+#00AFEB;
+border-radius:10px;
+padding:16px;
+background-color:
+#C5EBFB;
+}
+p.top-tip::before {
+color:orange;
+;
+
+}
+table {
+font-size:70%;
+border-collapse:
+collapse;
+width: 100%;
+}
+th, td {
+border:1px solid
+#000000;
+padding:8px;
+text-align: left;
+}
+th {
+background-color:
+#FCAB68;
+}
+td {
+background-color:
+#BA99C0;
+}
+
+@import url (https://fonts.gooogleapis.com/css?family=Mukta+Malar+Narrow);
+/* set sizing to border box method */
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+/* set maximum and minimum widths for the body and center within the viewport */
+body {
+background-color:#FFF5EE;
+font-family: sans-serif;
+margin-left: auto;
+margin-right: auto;
+max-width: 1080px;
+min-width: 100px;
+padding-top: 8px;
+padding-bottom: 24px;
+padding-left: 24px;
+padding-right: 24px;
+}
+/* add a fancy background */
+html {
+background: url(http://www.pharmatimes.com/__data/assets/image/0010/1369315/global_vaccine.jpg) no-repeat;
+  background-size: cover;
+
+}
+/* header */
+header{
+}
+header p {
+float: left;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+}
+header h1 {
+font-size: 16px;
+text-align: right;
+}
+/* the menu */
+nav ul {
+list-style-type: none;
+background-color: #c65032 ;
+
+
+font-family: sans-serif;
+font-weight: bold;
+padding: 16px;
+}
+nav ul li {
+display: inline;
+border-right: 2px solid #111111;
+padding-right: 8px;
+padding-left: 8px;
+}
+nav ul li:last-child {
+border-right: none;
+}
+nav ul li a {
+text-decoration: none;
+color: white;
+}
+nav li.selected{
+color: ghostwhite;
+text-decoration:line-through;
+}
+nav ul li a:hover {
+
+}
+
+section {
+background-color: #c8d8e4  ;
+margin-bottom: 24px;
+min-height: 320px;
+padding-left: 24px;
+padding-right: 24px;
+
+}
+/* the aside */
+aside {
+}
+/* footer */
+footer {
+}
+footer p.copyright {
+float: left;
+margin-top: 0px;
+}
+footer p.contact {
+text-align: right;
+}
+/* small images are set to 200px in height */
+img.small {
+float: left;
+height: 200px;
+margin-bottom: 24px;
+margin-right: 24px;
+}
+/* medium images can be 50% of the container element�s width, up to 360px */
+img.medium {
+max-width: 360px;
+width: 50%;
+}
+/* large images are 100% of the container element�s width */
+img.large {
+width: 100%;
+}
+/* add the same style of border to the elements which are to have borders */
+body, section, img {
+border: 2px solid #B1B1B1;
+border-radius: 16px;
+}
+/* the bits that are specific to a wide viewport (over 56em) */
+@media all and (min-width: 900px) {
+article {
+float: left;
+width: 66%;
+}
+aside {
+float: left;
+padding-left: 24px;
+width: 34%;
+}
+footer {
+clear: both;
+}
+}
+}
+div#envelope{
+width: 70%;
+margin: 50px 10% 10px 25%;
+padding:10px 0;
+
+}
+form{
+width:50%;
+margin:4% 15%;
+}
+
+input[type=text]{
+margin-bottom: 20px;
+margin-top: 10px;
+width:100%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+ text-indent: 100px;
+}
+input[type=submit]
+{
+margin-bottom: 20px;
+width:100%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+background-color: #4180C5;
+color: aliceblue;
+font-size:15px;
+cursor:pointer;
+}
+#submit:hover
+{
+background-color: black;
+}
+textarea{
+width:100%;
+padding: 15px;
+margin-top: 10px;
+border:1px solid #7ac9b7;
+border-radius:5px;
+margin-bottom: 20px;
+resize:none;
+
+}
+input[type=text]:focus,textarea:focus {
+border-color: #4697e4;
+}
+.fname {
+margin-bottom: 20px;
+margin-top: 10px;
+margin-right: 1px;
+width:50%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+
+}
+table {
+  display: table;
+  width: 80%;
+  margin: auto;
+  background-color: black;
+}
+tr {
+  background-color: #555;
+  border-collapse: none;
+}
+}
+th {
+  width: 33.33%;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+}
+td {
+  width: 33.33%;
+  padding: 5px 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  table {
+    width: 80%;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1px solid #000;
+  }
+}
+.btn-block {
+      margin-top: 10px;
+      text-align: center;
+      margin-left: 100px;
+      }
+      button {
+     display: block;
+  margin: 0 auto;
+  line-height: $font-size * 2;
+  padding: 0 20px;
+  background: $form-shadow;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0,0,0,1);
+  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px rgba(0,0,0,1);
+  cursor:pointer;
+  float:center;
+  width:50%;
+  margin-right:50px;
+  margin-left:15px;
+
+
+
+      }
+      button:hover {
+      background: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid rgba(0,0,0,1);
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+html {
+background-color: #FAF4C9
+}
+.flex {
+  margin: 10vh;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.one {
+  width: 70%;
+  height: 10%;
+  background-color: #FFA07A;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px black, 0px 0px 0px red;
+  cursor: pointer;
+   font-size: 8px;
+}
+
+.one:hover{
+  animation: anim .75s;
+}
+h1 {
+ font-family: 'Rubik', sans-serif; 
+ text-align:center ;
+ font-size: 12px;
+ color: #800000;
+}
+h2 {
+    text-align: center;
+    color: #191970;
+}
+
+@keyframes anim {
+  25% {box-shadow: 15px 0px #A4C2F5, -15px 0px 0px #95DEB1;}
+  50% {box-shadow: 15px 15px #A4C2F5, -15px -15px 0px #95DEB1;}
+  75% {box-shadow: 0px 15px #A4C2F5, 0px -15px 0px #95DEB1;}
+  99% {box-shadow: 0px 0px #A4C2F5, 0px -0px 0px #95DEB1;}
+}
+.label {
+    text-align: center;
+    color: #191970;
+
+
+}

@@ -1,19 +1,26 @@
-
 from django.conf.urls import url, include
 from django.contrib import admin
 from RICList import views 
 
+ 
 urlpatterns = [    
     url('admin/',admin.site.urls),
     url(r'^$', views.HomePage, name='HomePage'),    
     url(r'^RICList/new$', views.new_list, name='new_list'),    
     url(r'^RICList/(\d+)/$', views.view_list, name='view_item'),    
     url(r'^RICList/(\d+)/add_item$', views.add_item, name='add_item'),
-    url(r'^RICList/candy$', views.candy_list, name='candy_list'),
-    url(r'^RICList/django$', views.django_list, name='django_list'),
-    url(r'^RICList/chuchay$', views.chuchay_list, name='chuchay_list'),
-    url(r'^RICList/kanga$', views.kanga_list, name='kanga_list'),
-    url(r'^RICList/form$', views.form_list, name='form_list'),]
+    url(r'^candy_list$', views.candy_list, name='candy_list'),
+    url(r'^django_list$', views.django_list, name='django_list'),
+    url(r'^chuchay_list$', views.chuchay_list, name='chuchay_list'),
+    url(r'^kanga_list$', views.kanga_list, name='kanga_list'),
+    url(r'^form_list$', views.form_list, name='form_list'),
+    url(r'^RICList/form$', views.form_list, name='form_list'),
+    url(r'^contact/$', views.contact, name='contact'),
+    url(r'^about/$', views.about, name='about'),]
+    
+
+    
+
 
     
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ window.onload = function() {
+    document.getElementById('ifYes').style.display = 'none';
+    document.getElementById('ifNo').style.display = 'none';
+}
+function yesnoCheck() {
+    if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.display = 'block';
+        document.getElementById('ifNo').style.display = 'none';
+      
+    } 
+    else if(document.getElementById('noCheck').checked) {
+        document.getElementById('ifNo').style.display = 'block';
+        document.getElementById('ifYes').style.display = 'none';
+       
+   }
+
+}
+</script>
+</head>
+<body>
+    Yes <input type="radio" onclick="javascript:YesNoCheck();" name="yesno" id="yesCheck"> No <input type="radio" onclick="javascript:YesNoCheck();" name="yesno" id="noCheck"><br>
+    <div id="Yes" style="visibility:hidden">
+        If yes, explain: <input type='text' id='yes' name='yes'><br>
+        What can we do to accommodate you?  <input type='text' id='acc' name='acc'>
+    </div>
+With Comorbidity:
+<input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"/>YES
+<input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"/>NO
+<br>
+<div id="ifYes" style="display:none">
+    COMORBIDITY:
+<input type="text" name="all" placeholder="TYPE OF COMORBIDITY">
+</div>
+<div id="ifNo" style="display:none">
+</div>
+</html>***
