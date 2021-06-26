@@ -10,20 +10,15 @@
         <li>
             <a href="http://cvd19.ph">Home</a>
           </li>
-            
-              <a href="/form_list">PLACE</a>
-               </li>
-           
+          </li>
               <a href="/candy_list">Personal Info</a>
                </li>
-           
-              <a href="/django_list">Employment</a>
-               </li>
-               
-              <a href="/chuchay_list">Vaccination</a>
+             
+          </li>
+              <a href="/django_list">Employment & Vaccine Info</a>
                </li>
              
-              <a href="/kanga_list">Other Info</a>
+              <a href="/kanga_list">Other Details</a>
                </li>
 
           </li>
@@ -36,7 +31,8 @@
 <article>
   <br><br>
 <section>
-      <h1></h1>
+      <h4 style="text-align: center;font-size: 30px;color: brown;">UPDATE</h4>
+     
   <form method="POST" action="update/{{municipalitys.id}}">
     {% csrf_token %}
   <label>Baranggay</label>
