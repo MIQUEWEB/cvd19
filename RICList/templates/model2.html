@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="/static/css/about.css">
-  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
 </head>
 <header>
 <nav>
-       
+
       <ul>
         <li>
             <a href="http://cvd19.ph">Home</a>
           </li>
               <a href="/django_list">Employment & Vaccine Info</a>
                </li>
-             
+
               <a href="/kanga_list">Other Details</a>
                </li>
 
@@ -24,23 +24,23 @@
         </ul>
       </nav>
     </header>
-    
+
   <body>
     <table>
     <tr>
-  <th> Municipality</th> 
+  <th> Municipality</th>
   <th>Baranggay</th>
   <th>Region</th></tr>
 <td>{{municipality.ukmunicipality}}<br></td>
 <td>{{municipality.yybaranggay}} <br></td>
-<td>R{{municipality.xxregion}}<br></td>
+<td>{{municipality.xxregion}}<br></td>
 <style>table, th, td {
   border: 1px solid black;
 }</style>
 </body></table>
 
 <article>
-    <br>  <br>  
+    <br>  <br>
   <section>
     <br>
     <div class="testbox">
@@ -97,10 +97,18 @@
            <select class="com" id="com"
                 name="com" size="width:40%">
                 <option value="1"> &#x2013; A1: (Frontline workers janitors, barangay health workers, etc.) </option>
-<option value="2"> &#x2013;A2:Senior citizens aged 60 years old and above </option>
-<option value="3"> &#x2013;A3: Persons with comorbidities</option>
-<option value="4"> &#x2013; A4: Frontline personnel in essential sectors</option>
-<option value="5"> &#x2013;A5: Indigent population</option>
+<option value=""> &#x2013;A2:Senior citizens aged 60 years old and above </option>
+<option value=""> &#x2013;A3: Persons with comorbidities</option>
+<option value=""> &#x2013; A4: Frontline personnel in essential sectors</option>
+<option value=""> &#x2013;A5: Indigent population</option>
+<option value=""> &#x2013;B1: Teachers, Social Workers</option>
+<option value=""> &#x2013;B2: Other Government Workers</option>
+<option value=""> &#x2013;B3: Other essential workers</option>
+<option value=""> &#x2013; B4: Socio-demographic groups </option>
+<option value=""> &#x2013;B5: Overseas Filipino Workers </option>
+<option value=""> &#x2013;B6: Other Remaining Workforce </option>
+<option value=""> &#x2013;C: Rest of the Filipino population not otherwise included in the above groups </option>
+
 </select></div>
 <br>
           <div class="item">
@@ -108,7 +116,7 @@
       <label>Gender:</label>
            <select class="com" id="cmm"
                 name="cmm">
-           
+
                 <option value="1"> &#x2013; MALE </option>
 <option value="2"> &#x2013;FEMALE</option>
 </select>
@@ -146,7 +154,7 @@
             <td>{{ personal.hhrelat }}</td>
             <td>{{ personal.rmgender }}</td>
             <td>{{ personal.zbirth }}</td>
-        
+
         </tr> {% endfor %} </table>
      </div></aside>
     </form></div></section></article></center>
@@ -162,10 +170,10 @@
     * In the long term, the covid vaccine record may serve to gain access to events and travel. <br>
    * If you lose your card, you can retain your information here as a proof you got covid19 vaccinate.<br></h1>
 
- 
-       
+
+
        </h1></h1></div></div></aside>
-    
+
 
 <script >
 function validateForm(form)
@@ -187,7 +195,7 @@ function validateForm(form)
 </script>
 <script>
 function onlyNumberKey(evt) {
-         
+
         // Only ASCII character in that range allowed
         var ASCIICode = (evt.which) ? evt.which : evt.keyCode
         if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
@@ -206,7 +214,7 @@ function onlyNumberKey(evt) {
         }
     }
 </script>
-  
+
 <script>
 
 // A function that hides or shows a selected element
@@ -228,10 +236,10 @@ function hideOrShow() {
     x.style.display = "none";
   }
 }
-    (function($) { 
-  $(function() { 
+    (function($) {
+  $(function() {
 
-    //  open and close nav 
+    //  open and close nav
     $('#navbar-toggle').click(function() {
       $('nav ul').slideToggle();
     });
@@ -257,8 +265,8 @@ function hideOrShow() {
     $('html').click(function() {
       $('.navbar-dropdown').hide();
     });
-  }); 
-})(jQuery); 
+  });
+})(jQuery);
 
 </script>
 {% csrf_token %}
