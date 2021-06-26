@@ -10,7 +10,7 @@
 
       <ul>
         <li>
-            <a href="http://cvd19.ph">Home</a>
+            <a href="/form_list">Home</a>
           </li>
               <a href="/django_list">Employment & Vaccine Info</a>
                </li>
@@ -76,11 +76,13 @@
           <div class="item">
             <label for="phil">Phil Health No.<span>*</span></label>
             <br>
-            <input id="phil1" maxlength="12"type="text"  placeholder="Phil Health "  name="phil1" onkeypress="" required/>
+            <input id="phil1" maxlength="12"type="text"  placeholder="Phil Health "  name="phil1" onkeypress="return onlyNumberKey(event)"
+                   maxlength="3" required/>
           </div>
           <div class="item">
             <label for="contact">Contact No<span>*</span></label>
-            <input id="cn" type="tel"   maxlength="20"  placeholder="[+639]{15768897}" name="cn" required/>
+            <input id="cn" type="tel"   maxlength="11"  placeholder="[093]{15768897}"  name="cn"onkeypress="return onlyNumberKey(event)"
+                   maxlength="11" required/>
           </div>
 
 
@@ -96,18 +98,18 @@
               <label>Category:</label>
            <select class="com" id="com"
                 name="com" size="width:40%">
-                <option value="1"> &#x2013; A1: (Frontline workers janitors, barangay health workers, etc.) </option>
-<option value=""> &#x2013;A2:Senior citizens aged 60 years old and above </option>
-<option value=""> &#x2013;A3: Persons with comorbidities</option>
-<option value=""> &#x2013; A4: Frontline personnel in essential sectors</option>
-<option value=""> &#x2013;A5: Indigent population</option>
-<option value=""> &#x2013;B1: Teachers, Social Workers</option>
-<option value=""> &#x2013;B2: Other Government Workers</option>
-<option value=""> &#x2013;B3: Other essential workers</option>
-<option value=""> &#x2013; B4: Socio-demographic groups </option>
-<option value=""> &#x2013;B5: Overseas Filipino Workers </option>
-<option value=""> &#x2013;B6: Other Remaining Workforce </option>
-<option value=""> &#x2013;C: Rest of the Filipino population not otherwise included in the above groups </option>
+                <option value="A1"> &#x2013; A1: (Frontline workers janitors, barangay health workers, etc.) </option>
+<option value="A2"> &#x2013;A2:Senior citizens aged 60 years old and above </option>
+<option value="A3"> &#x2013;A3: Persons with comorbidities</option>
+<option value="A4"> &#x2013; A4: Frontline personnel in essential sectors</option>
+<option value="A5"> &#x2013;A5: Indigent population</option>
+<option value="B1"> &#x2013;B1: Teachers, Social Workers</option>
+<option value="B2"> &#x2013;B2: Other Government Workers</option>
+<option value="B3"> &#x2013;B3: Other essential workers</option>
+<option value="B4"> &#x2013; B4: Socio-demographic groups </option>
+<option value="B5"> &#x2013;B5: Overseas Filipino Workers </option>
+<option value="B6"> &#x2013;B6: Other Remaining Workforce </option>
+<option value="C"> &#x2013;C: Rest of the Filipino population not otherwise included in the above groups </option>
 
 </select></div>
 <br>
@@ -117,15 +119,16 @@
            <select class="com" id="cmm"
                 name="cmm">
 
-                <option value="1"> &#x2013; MALE </option>
-<option value="2"> &#x2013;FEMALE</option>
+                <option value="MALE"> &#x2013;MALE </option>
+<option value="FEMALE"> &#x2013;FEMALE</option>
 </select>
           </div>
           </div>
           <br>
              <div class="item">
               <br>
-<b> Age: <input type=text id =DOB name=DOB onkeypress=return onlyNumberKey(event) maxlength=3> </b>
+<b> Age: <input type=text id =DOB name=DOB onkeypress="return onlyNumberKey(event)"
+                   maxlength="3"> </b>
 <span id = "message" style="color:blue"> </span> <br><br>
 </div>
 
@@ -140,8 +143,10 @@
        <th>Contact No.</th>
        <th>Emergency</th>
        <th>Relationship</th>
+        <th>Categories</th>
        <th>Gender</th>
-       <th>Bday</th>
+       <th>Age</th>
+     
 
         <tr>
             <!{{ forloop.counter }}:  -->
@@ -152,8 +157,10 @@
             <td>{{ personal.zpnumber }}</td>
             <td>{{ personal.zemerg }}</td>
             <td>{{ personal.hhrelat }}</td>
+            <td>{{ personal.zfccategories }}</td>
             <td>{{ personal.rmgender }}</td>
             <td>{{ personal.zbirth }}</td>
+           </tr>
 
         </tr> {% endfor %} </table>
      </div></aside>
@@ -267,6 +274,7 @@ function hideOrShow() {
     });
   });
 })(jQuery);
+
 
 </script>
 {% csrf_token %}
