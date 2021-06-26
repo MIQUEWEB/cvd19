@@ -12,7 +12,7 @@
         <li>
             <a href="http://cvd19.ph">Home</a>
           </li>
-              <a href="/django_list">Employment & Vaccine Info</a>
+              <a href="/django_list">Employment & Vaccine Details</a>
                </li>
              
               <a href="/kanga_list">Other Info</a>
@@ -26,6 +26,19 @@
     </header>
     
   <body>
+    <table>
+    <tr>
+  <th> Municipality</th> 
+  <th>Baranggay</th>
+  <th>Region</th></tr>
+<td>{{municipality.ukmunicipality}}<br></td>
+<td>{{municipality.yybaranggay}} <br></td>
+<td>R{{municipality.xxregion}}<br></td>
+<style>table, th, td {
+  border: 1px solid black;
+}</style>
+</body></table>
+
 <article>
     <br>  <br>  
   <section>
