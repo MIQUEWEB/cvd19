@@ -6,30 +6,22 @@
 </head>
 <header>
      <meta charset="utf-8">
-       <link rel="stylesheet" type="text/css" href="/static/css/model.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/2ndmodel.css">
+      
+ 
   <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
 </head>
 <header>
  <nav>
         <ul>
         <li>
-            <a href="http://cvd19.ph">Home</a>
+             <a href="http://cvd19.ph">Home</a>
           </li>
-            
-              <a href="/form_list">PLACE</a>
+          <li class="selected">About us</li>
                </li>
-           
-              <a href="/candy_list">Personal Info</a>
+                    <a href="/about">All About Vaccine</a>
                </li>
-           
-              <a href="/django_list">Employment</a>
-               </li>
-               
-              <a href="/chuchay_list">Vaccination</a>
-               </li>
-             
-              <a href="/kanga_list">Other Info</a>
+                <a href="/contact">Contact</a>
+                
                </li>
 
           </li>
@@ -41,56 +33,14 @@
 <article>
   <br><br>
 <section>
-      <br>
-<form method="POST" action="/RICList/kanga">
-    <h1> Vaccine Information</h1>
-    <label for="name">Vaccine Name:</label>
-    <br>
- <input type="text" type="text" placeholder="Brand Name eg. aztrazeneca" id="vax" required>
-  </div>
-
+    <h4 style="font-size: 40px; text-align: center; color: darkred;" >ABOUT US</h4>
+    <h1 style="font-size: 20px; text-align: center; color: saddlebrown; "> COVID VACCINATED RECORD </h1>
+    <p> AT , COVID VACCINATED RECORD we want to keep your covid-19 vaccination information, As you may know if you've already vaccinated , this is one of the ways to retrieve the details about covid-19 vaccination information. THANKYOU :) </p>
+    -----------------------------------------CREATOR---------------------------------------------------<br>
+Ricca Mae Mique
 <br>
- <label for="address">First Dose:   </label>
- (date given)
- <br>
-    <input type="date" name="text" placeholder="Date Received" id="dat1" required>
-    <br>
-     <label for="address">Second  Dose:</label>
-     (date given)
-     <br>
-    <input type="date" name="email" placeholder="Date Received" id="dat2" required>
-    <br>
-    <label for="address">Vaccination Site:</label>
-    <br>
-    <input type="text" name="email" placeholder="" id="dat1" required>
-    <br>
-    <label for="address">Vaccinator:</label>
-    <br>
-    <input type="text" name="email" placeholder="" id="dat1" required>
-    <br>
-        </div>
-<br>
-          {% csrf_token %}
-      <div class="btn-order">
-      <button type="order" >Proceed</button>
-      </div>
-    </form>
 
-    <br>
-    <style >
-
-      label {
-        font-weight: bold;
-        text-align: center;
-
-      }
-    </style>
-     <script src = ""></script>
-   <script>
-      $(document).ready(function() {
-         $("#button1").click(function() {
-            $("#dcom").attr('disabled', !$("#dcom").attr('disabled'));
-         });
-      });
-   </script>
-</head>
+ </section></article>
+                                           
+</section></aside>
+</article></header></html>

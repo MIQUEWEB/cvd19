@@ -7,7 +7,7 @@ class Municipality(models.Model):
     	xxregion = models.TextField(default='')  			
     	class meta:
     		db_table ="rrmunicipality"
-class Personal_Info(models.Model):
+class Personal(models.Model):
     	zflname = models.TextField(default='')
     	znaddress = models.TextField(default='')
     	rremail = models.TextField(default='')
@@ -19,7 +19,7 @@ class Personal_Info(models.Model):
     	hhrelat = models.TextField(default='')
     	rmgender= models.TextField(default='')
     	zbirth = models.TextField(default='')
-    	municipality = models.ForeignKey(Municipality, default=None, on_delete=models.PROTECT)
+    	municipality = models.ForeignKey(Municipality, default=None, on_delete=models.CASCADE)
     	class meta:
     		db_table ="mmPersonal_Info"
 class Employment(models.Model):
@@ -28,7 +28,7 @@ class Employment(models.Model):
     	occu = models.TextField(default='')
     	employern = models.TextField(default='')
     	eaddr = models.TextField(default='')
-    	personal_info = models.ForeignKey(Personal_Info, default=None, on_delete=models.PROTECT)
+    	personal = models.ForeignKey(Personal, default=None, on_delete=models.CASCADE)
     	class meta:
     		db_table ="mmemploeyee"
 
@@ -38,7 +38,7 @@ class Vaccination_Details(models.Model):
     	vr2nddosedate = models.DateField(default='')
     	vftestingcenter = models.TextField(default='')
     	vaccinator = models.TextField(default='')
-    	personal_info = models.ForeignKey(Personal_Info, default=None, on_delete=models.PROTECT)
+    	personal = models.ForeignKey(Personal, default=None, on_delete=models.CASCADE)
     	class meta:
      		db_table ="vvVaccination_Details"
 
@@ -49,7 +49,7 @@ class Comorbidities(models.Model):
     	dicovid = models.TextField(default='')
     	datecovid = models.DateField(default='')
     	classcovid = models.TextField(default='')
-    	personal_info = models.OneToOneField(Personal_Info, default=None, on_delete=models.PROTECT)
+    	personal = models.OneToOneField(Personal, default=None, on_delete=models.CASCADE)
     	class meta:
     		db_table ="hhComorbidities"
 

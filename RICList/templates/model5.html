@@ -12,25 +12,20 @@
 
 <header>
  <nav>
-        <ul>
+        
+             <ul>
         <li>
             <a href="http://cvd19.ph">Home</a>
           </li>
-            
-              <a href="/form_list">PLACE</a>
+            <a href="/django_list">Employment & Vaccine Info</a>
                </li>
            
-              <a href="/candy_list">Personal Info</a>
+    
                </li>
-           
-              <a href="/django_list">Employment</a>
+              <li class="selected">Other Details</a>
                </li>
                
-              <a href="/chuchay_list">Vaccination</a>
-               </li>
-             
-              <a href="/kanga_list">Other Info</a>
-               </li>
+        
 
           </li>
           <li>
@@ -60,7 +55,7 @@
     </select>
  <br>
         <label for="employed">TYPE OF COMORBIDITY:</label>
-        <input type="text">
+        <input type="text"placeholder="(Leave blank if none)">
         <br>
      <label for="employed">With Allergy?</label><br>
     <select class="form-control" id="employed">
@@ -69,7 +64,7 @@
     </select>
  <br>
         <label for="employed">TYPE OF ALLERGY:</label>
-        <input type="text">
+        <input type="text"placeholder="(Leave blank if none)">
       </div>
         <label for="employed">Are you Diagnosed with COVID19?</label><br>
  <label> YES </label> <input type="radio" onclick="modefunc();" name="yesno" id="comor"> 

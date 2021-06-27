@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
   <title>cvd</title>
 </head>
 
 <body>
+
 
   <header>
     <div>
@@ -18,9 +19,10 @@
     </div>
     <nav>
       <ul>
-
+</ul></nav></header>
     </nav>
   </header>
+
 
   <section class="titles">
 
@@ -28,6 +30,47 @@
     <p>“together we can end this global pandemic and move forward to a better future.”⁣</p>
 
   </section>
+   
+<button type="button" onclick="asd(1)" id="update" value="button">Create Now!</button>
+<form id="asd"form method="POST" action="/new_municipality">  
+  <section class="container">
+    <div class="bo">
+  <div class="item">
+   <h1>Create a Record</h1>
+<label>Baranggay</label><br>
+<input name="ffbrgy"  placeholder="(e.g dasma)" type="text" id="ffbrgy"  style="width: 65%;margin-left: 5%"><br>
+<label> Municipality</label><br>
+<input name="xxmni" placeholder="(e.g dasma)" type="text" id="xxmni" style="width: 65%;margin-left: 5%"><br>
+<label>Region</label><br>
+
+<input name="Region" placeholder="(e.g IV A)" type="text" id="Region"   style="width: 65%;margin-left: 5%"><br>
+<label></label>
+{% csrf_token %}
+ <button style="margin-top: 5%;margin-left: 5%;"
+    button type="order"value="Continue"
+       >Proceed</button>
+     
+
+
+</form>
+  
+    <section>
+    
+ <table id="usertab">
+   <th>Baranggay</th>
+        <th>Municipality</th>
+            <th>Region</th>
+  <tr> 
+  <tr> {% for municipality in municipalitys %}
+    <td> <a href=/{{municipality.id}}>{{municipality.yybaranggay}}</a></td>
+      <td>{{municipality.ukmunicipality}}</td>
+       <td>{{municipality.xxregion}}</td>
+    </tr> {% endfor %}
+          </tr>
+          <tr>
+  </tr>
+
+  </tr></table></section></section></article>
 
   <section class="container-boxes">
     <div class="box">
@@ -78,7 +121,25 @@
 
     </div>
   </section>
+<script type="text/javascript">
 
-</body>
+  window.onload = function() {
+
+    document.getElementById("asd").style.display = "none";
+
+  };
+
+  function asd(a) {
+  
+    if (a == 1) {
+      document.getElementById("asd").style.display = "block";
+    } else {
+      document.getElementById("asd").style.display = "none";
+    }
+      
+  }
+</script>
+
+
 
 </html>

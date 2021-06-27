@@ -1,75 +1,42 @@
-<html>
-<head>
-<header>
-     <meta charset="utf-8">
-       <link rel="stylesheet" type="text/css" href="about.css">
-       <header>
- <nav>
-        <ul>
-        <li>
-            <a href="homepage.html">Home</a>
-          </li>
-          <a href="about.html">All About Vaccine</a>
-               </li>
-          <li class="selected">Fill Up</li>
+
+<button type="button" onclick="asd(1)" id="update" value="Update Product">update</button>
+
+
+<form id="asd" action="">
+<button type="button" id="creatorbutton">+ Create</button>
+      <form class="form" id="creatorform" style="text-align: center; padding-top: 1.50%" method="POST" action="/newlist_url">
+ <button type="button" id="form">+ Create</button>
+      <form class="form" id="now" style="text-align: center; padding-top: 1.50%" method="POST" action="/new_municipality">
+
+<input name="ffbrgy"  placeholder="(e.g dasma)" type="text" id="ffbrgy" width="100px;">
+<label>Your Municipality</label>
+<input name="xxmni" placeholder="(e.g dasma)" type="text" id="xxmni" width="100px;">
+<label>Region</label>
+
+<input name="Region" placeholder="(e.g IV A)" type="text" id="Region" width="100px;">
+<label></label>
+{% csrf_token %}
+      <div class="btn-block">
+      <button type="order"value="Continue"
+       >Proceed</button>
+      </div>
+</form>
+
+<script type="text/javascript">
+
+  window.onload = function() {
+
+    document.getElementById("asd").style.display = "none";
+
+  };
+
+  function asd(a) {
   
-          </li>
-      </ul></nav></header>
-      <br>
-
- <label>With Comorbidity:</label> <br>
-    Yes <input type="radio" onclick="modefunc();" name="yesno" id="comor"> No 
-    <input type="radio" name="yesno" id="comor"><br>
-    
-                <br>
-                <div id="tycomor" style="display:none">     
-                    <label>Type of Comorbidity:</label> <br>
-                    <input type="text" id="loc"> 
-                     <div class="flex"><div class="one">
-   
-                    <h2>List of Comorbidities</h2>
-  <h2>(1)HYPERTENSION<br>
-  (2)HEART DISEASE<br>
-(3)KIDNEY DISEASE<br>
-(4)BRONCHIAL ASTHMA<br> 
- (5)IMMUNO DEFICIENCY<br>
- (6)CANCER<br>
- (7) If others please specify<br>
-</h2></div></div>                  
-</div>
- <label>With Allergy:</label> <br>
-    Yes <input type="radio" onclick="modefunc();" name="yesno" id="alle"> No 
-    <input type="radio"  name="yesno" id="alle"><br>    
-         <div id="del" style="display:none">
-                       
-                    <label>Type of Allergy:</label> <br>
-                    <input type="text" id="loc"> 
-                     <div class="flex"><div class="one">
-   
-                    <h2>List of Allergy</h2>
-  <h2>(1)DRUGS<br>
-  (2)FOOD<br>
-(3)LATEX<br>
-(4)INSECT<br> 
- (5)FOOD<br>
- (6)PET<br>
- (7) POLLEN<br>
-  (8) MOLD<br>
-  (7) If others please specify<br>
-</h2></div></div>  
-                </div>
-
-<script>
-
-function modefunc(){
-            if (document.getElementById('comor').checked == true){
-                document.getElementById("tycomor").style.display = 'block';
-                document.getElementById("del").style.display = 'none';
-            }
-            if (document.getElementById('alle').checked == true){
-                document.getElementById("del").style.display = 'block';
-                document.getElementById("tycomor").style.display = 'none';
-            }
-        }
-    </script>
-    </html>
+    if (a == 1) {
+      document.getElementById("asd").style.display = "block";
+    } else {
+      document.getElementById("asd").style.display = "none";
+    }
+      
+  }
+</script>

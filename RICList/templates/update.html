@@ -1,0 +1,55 @@
+<header>
+     <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/about.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
+</head>
+<header>
+ <nav>
+        <ul>
+        <li>
+            <a href="http://cvd19.ph">Home</a>
+          </li>
+            
+              <a href="/form_list">PLACE</a>
+               </li>
+           
+              <a href="/candy_list">Personal Info</a>
+               </li>
+           
+              <a href="/django_list">Employment</a>
+               </li>
+               
+              <a href="/chuchay_list">Vaccination</a>
+               </li>
+             
+              <a href="/kanga_list">Other Info</a>
+               </li>
+
+          </li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h3>COVID-19 vaccine: It’s our turn to roll up our sleeves and get vaccinated!</h3>
+<article>
+  <br><br>
+<section>
+      <h1></h1>
+  <form method="POST" action="update/{{municipalitys.id}}">
+    {% csrf_token %}
+  <label>Baranggay</label>
+    <input name="ffbrgy"  placeholder="(e.g dasma)" value="{{ municipalitys.yybaranggay }}"type="text" id="ffbrgy" width="100px;">
+<label>Municipality</label>
+<input name="xxmni" placeholder="(e.g dasma)" type="text" value="{{municipalitys.ukmunicipality}}" id="xxmni" width="100px;">
+<label>Region</label>
+
+<input name="Region" placeholder="(e.g IV A)" type="text" value="{{municipalitys.xxregion}}" id="Region" width="100px;">
+<label></label>
+{% csrf_token %}
+ <button style="margin-top: 5%;margin-left: 5%;"
+    button type="order"value="Continue"
+       >SUBMIT</button>
+     <br>
+  </form></section></article></header>

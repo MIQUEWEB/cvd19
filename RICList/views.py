@@ -1,15 +1,23 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from RICList.models import Municipality, Personal_Info, Employment, Vaccination_Details, Comorbidities
+from RICList.models import Municipality, Personal, Employment, Vaccination_Details, Comorbidities
 
 
 def HomePage(request):
     municipalitys= Municipality.objects.all()
-    return render(request, 'homepage.html', {'municipalitys': municipalitys})
+    return render(request, 'model1.html', {'municipalitys': municipalitys})
 
-def view_list(request, municipality_id):
+def new_municipality(request):  
+    newmunicipality_ = Municipality.objects.create(yybaranggay=request.POST['ffbrgy'],ukmunicipality=request.POST['xxmni'],xxregion=request.POST['Region']) 
+    return redirect(f'/{newmunicipality_.id}/view_municipality')
+
+def view_municipality(request, municipality_id):
     municipality_ = Municipality.objects.get(id=municipality_id)
-    return render(request, 'model2.html', {'municipality': municipality_})
+    return render(request, 'model2.html', {'municipality': municipality_}) 
+def add_item(request, municipality_id):    
+    municipality_ = Municipality.objects.get(id=municipality_id)  
+    Personal.objects.create(zflname=request.POST['fname'],znaddress=request.POST['address1'],rremail=request.POST['zemail'],zvphil=request.POST['phil1'],zpnumber=request.POST['cn'],zemerg=request.POST['Cnumber'],hhrelat=request.POST['rell'],zfccategories=request.POST['com'],rmgender=request.POST['cmm'],zbirth=request.POST['DOB'], municipality=municipality_)
+    return redirect(f'/{municipality_.id}/view_municipality') 
 def form_list(request):
     return render(request,'model1.html')
 def candy_list(request):
@@ -20,15 +28,30 @@ def chuchay_list(request):
     return render(request,'model4.html')
 def kanga_list(request):
     return render(request,'model5.html')
+def edit(request, id):
+    municipalitys = Municipality.objects.get(id=id)
+    context = {'municipalitys': municipalitys}
+    return render(request, 'update.html', context)
+def update(request, id):
+    municipality = Municipality.objects.get(id=id)
+    municipality.yybaranggay =request.POST['ffbrgy']
+    municipality.ukmunicipality =request.POST['xxmni']
+    municipality.xxregion =request.POST['Region']
+    municipality.save()
+    return redirect('/')
+def delete(request, id):
+    municipality = Municipality.objects.get(id=id)
+    municipality.delete()
+    return redirect('/')
 def new_list(request):
-    municipal_= Municipality.objects.create()
+    municipality_= Municipality.objects.create()
     #municipal_= Municipality.objects.create(ukmunicipality=request.POST['flmunicipality'],yybaranggay=request.POST['zzbaranggay'])
-    return redirect(f'/RICList/{municipal_.id}/')
-
-def add_item(request, municipality_id):
-    municipality_ = Municipality.objects.get(id=municipality_id)
-    #Personal_Info.objects.create(zflname=request.POST['zvname'],znaddress=request.POST['xxaddress'],zpngender=request.POST['rjgender'],zpnumber=request.POST['contactn'],zvphilhealth=request.POST['philnumber'] ,zrmbirthday=request.POST['kkbirthday'],municipality=municipality_)
     return redirect(f'/RICList/{municipality_.id}/')
+
+#def add_item(request, municipality_id):
+    #municipality_ = Municipality.objects.get(id=municipality_id)
+    #Personal_Info.objects.create(zflname=request.POST['zvname'],znaddress=request.POST['xxaddress'],zpngender=request.POST['rjgender'],zpnumber=request.POST['contactn'],zvphilhealth=request.POST['philnumber'] ,zrmbirthday=request.POST['kkbirthday'],municipality=municipality_)
+    #return redirect(f'/RICList/{municipality_.id}/')
 def about(request):
     return render(request,'about.html')
 def contact(request):

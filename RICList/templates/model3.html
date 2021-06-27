@@ -4,7 +4,7 @@
   <meta charset="utf-8">
  
     <link rel="stylesheet" type="text/css" href="/static/css/about.css">
-  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
+   
 </head>
 <header>
 <nav>
@@ -13,20 +13,14 @@
             <a href="http://cvd19.ph">Home</a>
           </li>
             
-              <a href="/form_list">PLACE</a>
-               </li>
            
-              <a href="/candy_list">Personal Info</a>
+              <li class="selected">Employment & Vaccine Info</li>
                </li>
-           
-              <a href="/django_list">Employment</a>
+               </li>
+              <a href="/kanga_list">Other Details</a>
                </li>
                
-              <a href="/chuchay_list">Vaccination</a>
-               </li>
-             
-              <a href="/kanga_list">Other Info</a>
-               </li>
+   
 
           </li>
           <li>
@@ -38,11 +32,11 @@
 
   </head>
   <body>
-    <section>
-    <div class="testbox">
-     <form method="POST" action="/RICList/chuchay">
+  <section>  
+
+     <form method="POST" action="/RICList/form">
   <h2>Employment Details</h2>
-        <div class="item">
+    
    
  <label for="employed">Are you Employed?</label><br>
  <label> YES </label> <input type="radio" onclick="modefunc();" name="yesno" id="comor"> 
@@ -67,19 +61,46 @@
       <br>
         <input type="text" class="form-control w-100" id="em" required>
       </div></div>
-      
+      <hr>
+  <h2> Vaccine Information</h2>
+    <label for="name">Vaccine Name:</label>
+    <br>
+ <input type="text" type="text" placeholder="Brand Name eg. aztrazeneca" id="vax" required>
+  </div>
+
+<br>
+ <label for="address">First Dose:   </label>
+ (date given)
+ <br>
+    <input type="date" name="text" placeholder="Date Received" id="dat1" required>
+    <br>
+     <label for="address">Second  Dose:</label>
+     (date given)
+     <br>
+    <input type="date" name="email" placeholder="Date Received" id="dat2" required>
+    <br>
+    <label for="address">Vaccination Site:</label>
+    <br>
+    <input type="text" name="email" placeholder="" id="dat1" required>
+    <br>
+    <label for="address">Vaccinator:</label>
+    <br>
+    <input type="text" name="email" placeholder="" id="dat1" required>
+    <br>
+        </div>
+<br>    
    
  <div class="btn-class">
           {% csrf_token %}
       <div class="btn-block">
-      <button type="order" id="button">Proceed</button>
+      <button type="order" id="button">SUBMIT</button>
       </div>
     </form>
   </div>
 
+</form></section>
 
 
-  <br><br>
 
 
 
@@ -102,6 +123,19 @@ function modefunc(){
                 document.getElementById("tycomor").style.display = 'none';
             }
         }
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
     </script>
 
 

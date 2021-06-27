@@ -7,21 +7,12 @@
 </head>
 <header>
 <nav>
-        <ul>
+       
+      <ul>
         <li>
             <a href="http://cvd19.ph">Home</a>
           </li>
-            
-              <a href="/form_list">PLACE</a>
-               </li>
-           
-              <a href="/candy_list">Personal Info</a>
-               </li>
-           
-              <a href="/django_list">Employment</a>
-               </li>
-               
-              <a href="/chuchay_list">Vaccination</a>
+              <a href="/django_list">Employment & Vaccine Info</a>
                </li>
              
               <a href="/kanga_list">Other Info</a>
@@ -40,8 +31,9 @@
   <section>
     <br>
     <div class="testbox">
-     <form method="POST" action="/RICList/django_list">
-        {% csrf_token %}
+     <form method="POST" action="/{{municipality.id}}/add_item">
+
+
      <h2>Personal Information</h2>
         <div class="banner">
 
@@ -75,7 +67,7 @@
           </div>
           <div class="item">
             <label for="contact">Contact No<span>*</span></label>
-            <input id="cn" type="text" maxlength="11" onkeypress="return onlyNumberKey(event)" placeholder="+63 966 164-540" name="cn" required/>
+            <input id="cn" type="tel"  pattern="[+639]{15768897}" maxlength="11" onkeypress="return onlyNumberKey(event)" placeholder="+63 966 164-540" name="cn" required/>
           </div>
 
 
@@ -117,7 +109,33 @@
 </div>
 
       <button type="order" onclick='checkEmail()' >Proceed</button>
+{% csrf_token %}
+ <table id="usertab">
 
+{% for personal in municipality.personal_set.all %}
+       <th>Name</th>
+       <th>Address</th>
+       <th>Phil No.</th>
+       <th>Contact No.</th>
+       <th>Emergency</th>
+       <th>Relationship</th>
+       <th>Gender</th>
+       <th>Bday</th>
+
+        <tr>
+            <!{{ forloop.counter }}:  -->
+            <td>{{ forloop.counter }} : {{personal.zflname }}</td>
+
+            <td>{{ personal.znaddress }}</td>
+            <td>{{ personal.zvphil }}</td>
+            <td>{{ personal.zpnumber }}</td>
+            <td>{{ personal.zemerg }}</td>
+            <td>{{ personal.hhrelat }}</td>
+            <td>{{ personal.rmgender }}</td>
+            <td>{{ personal.zbirth }}</td>
+        
+        </tr> {% endfor %} </table>
+     </div></aside>
     </form></div></section></article></center>
 </body>
 <br><br><br>
@@ -134,23 +152,7 @@
  
        
        </h1></h1></div></div></aside>
-       <table id="usertab">
-
-{% for Personal_Info in municipality.Personal_Info_set.all %}
-        <tr>
-            <!{{ forloop.counter }}:  -->
-            <td>{{ forloop.counter }} : {{Personal_Info.rlname }}</td>
-            <td>{{ Personal_Info.zflname }}</td>
-            <td>{{ Personal_Info.znaddress }}</td>
-            <td>{{ Personal_Info.zvphil }}</td>
-            <td>{{ Personal_Info.zpnumber }}</td>
-            <td>{{ Personal_Info.zemerg }}</td>
-            <td>{{ Personal_Info.hhrelat }}</td>
-            <td>{{ Personal_Info.rmgender }}</td>
-            <td>{{ Personal_Info.zbirth }}</td>
-        
-        </tr> {% endfor %} </table>
-     </div></aside>
+    
 
 <script >
 function validateForm(form)
@@ -213,6 +215,37 @@ function hideOrShow() {
     x.style.display = "none";
   }
 }
+    (function($) { 
+  $(function() { 
+
+    //  open and close nav 
+    $('#navbar-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.navbar-dropdown').hide();
+    });
+  }); 
+})(jQuery); 
 
 </script>
 {% csrf_token %}

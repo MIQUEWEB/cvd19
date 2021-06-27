@@ -1,100 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+  <title>cvd</title>
 </head>
-<header>
-     <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/static/css/about.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
-</head>
-<header>
- <nav>
-        <ul>
-        <li>
-            <a href="http://cvd19.ph">Home</a>
-          </li>
-            
-              <a href="/form_list">PLACE</a>
-               </li>
-           
-              <a href="/candy_list">Personal Info</a>
-               </li>
-           
-              <a href="/django_list">Employment</a>
-               </li>
-               
-              <a href="/chuchay_list">Vaccination</a>
-               </li>
-             
-              <a href="/kanga_list">Other Info</a>
-               </li>
+<body>
 
-          </li>
-          <li>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <h3>COVID-19 vaccine: It’s our turn to roll up our sleeves and get vaccinated!</h3>
-<article>
-  <br><br>
-<section>
-      <h1></h1>
-  <form method="POST" action="/RICList/candy">
-      <br><br>
-<label>Your Baranggay</label>
-<h1>{{municipality_.yybaranggay}}</h1>
-<h1>{{municipalitys.yybaranggay}}</h1>
-<h1>{{municipalitys_.yybaranggay}}</h1>
-<h1>{{municipality.yybaranggay}}</h1>
-<input name="ffbrgy"  placeholder="(e.g dasma)" type="text" id="ffbrgy" width="100px;">
-<label>Your Municipality</label>
-<input name="xxmni" placeholder="(e.g dasma)" type="text" id="xxmni" width="100px;">
-<label>Region</label>
 
-<input name="Region" placeholder="(e.g IV A)" type="text" id="Region" width="100px;">
+  <header>
+    <div>
+      <i class="fas fa-atom"></i>
+      <p>cvdph</p>
+    </div>
+    <nav>
+      <ul>
+</ul></nav></header>
+    </nav>
+  </header>
+
+  <section class="titles">
+
+    <h1>Let’s get vaccinated</h1>
+    <p>“together we can end this global pandemic and move forward to a better future.”⁣</p>
+
+  </section>
+  <section>
+<button type="button" onclick="asd(1)" id="update" value="button">Create Now!</button>
+<form id="asd"form method="POST" action="/new_municipality">  
+  <section class="container">
+    <div class="bo">
+  <div class="item">
+   <h1>Create a Record</h1>
+<label>Baranggay</label><br>
+<input name="ffbrgy"  placeholder="(e.g Baranggay)" type="text" id="ffbrgy"  style="width: 65%;margin-left: 5%"><br>
+<label> Municipality</label><br>
+<input name="xxmni" placeholder="(e.g dasma)" type="text" id="xxmni" style="width: 65%;margin-left: 5%"><br>
+<label>Region</label><br>
+
+<input name="Region" placeholder="(e.g IV A)" type="text" id="Region"   style="width: 65%;margin-left: 5%"><br>
 <label></label>
 {% csrf_token %}
-      <div class="btn-block">
-      <button type="order" >Next</button>
-      </div>
-
-      </div><!-- "main" 終了-->
- 
-    </form>
-    <section>
+ <button style="margin-top: 5%;margin-left: 5%;"
+    button type="order"value="Continue"
+       >Proceed</button>
+     <br>
     
  <table id="usertab">
-  <tr> 
-  <tr> {% for municipality in municipalitys %}
-    <td> <a href=/{{municipality.id}}>{{municipality.yybaranggay}}</a></td>
-      <td>{{municipality.ukmunicipality}}</td>
-       <td>{{municipality.xxregion}}</td>
-    </tr> {% endfor %}
-    <th>Baranggay</th>
+   <th>Baranggay</th>
         <th>Municipality</th>
             <th>Region</th>
+            <th>Modify</th>
+            <th>Delete</th>
+  <tr> 
+  <tr> {% for municipality in municipalitys %}
+    <td> <a href=/{{municipality.id}}/view_municipality>{{municipality.yybaranggay}}</a></td>
+      <td>{{municipality.ukmunicipality}}</td>
+       <td>{{municipality.xxregion}}</td>
+       <td><a href="edit/{{municipality.id}}">EDIT</a></td>
+       <td><a href="delete/{{municipality.id}}">DELETE</a></td>
+
+    </tr> {% endfor %}
           </tr>
-          <tr>
+          <tr></tr></table>
   </tr>
 
   </tr></table></section></section></article>
+  </section>
+<footer>
+  <section class="container-boxes">
+    <div class="box">
+
+      <div class="icon">
+        <a href=""><i class="fas fa-fire"></i></a>
+      </div>
+
+      <div class="text">
+            {% csrf_token %}
+   <a href="/chuchay_list">
+          <h3>About Us</h3>
+          <p>create a record if you are  vaccinated against COVID-19.</p>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="box">
+
+      <div class="icon">
+        <a href=""><i class="fas fa-seedling"></i></a>
+      </div>
+
+      <div class="text">
+        <a href="/about">
+
+          <h3>COVID 19 Vaccines</h3>
+          <p>For more infos about COVID-19 vaccine.
+           </p>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="box">
+
+      <div class="icon">
+        <a href=""><i class="fas fa-address-card"></i></a>
+      </div>
+
+      <div class="text">
+        <a href="/contact">
+          <h3>Contact Us</h3>
+          <p>CVDPH is a website that keep the information about covid19 vaccine record </p>
+        </a>
+      </div>
+
+    </div></section></footer>
+  </section>
+<script type="text/javascript">
+
+  window.onload = function() {
+
+    document.getElementById("asd").style.display = "none";
+
+  };
+
+  function asd(a) {
+  
+    if (a == 1) {
+      document.getElementById("asd").style.display = "block";
+    } else {
+      document.getElementById("asd").style.display = "none";
+    }
+      
+  }
+</script>
 
 
- <aside>
-  <br><br>
-    <h3>Safety Reminders</h3>
-    
-  <section>
-    <br><img class ="large"src="https://www.health.go.ug/covid/wp-content/uploads/2020/04/9.jpg"> 
-</section>
 
-  </aside>
-
-
-
-
-</body>
 </html>
